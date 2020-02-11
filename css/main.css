@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9af0ff;
+  background: #2effa3;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2378,13 +2378,14 @@ hr {
   }
 }
 .header {
+  height: 68px;
   background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%) !important;
 }
 .header-inner {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 12px 0;
   width: 85%;
 }
 .header-inner::before,
@@ -2952,7 +2953,6 @@ div.vcontrol {
   text-decoration: none;
   border: unset;
   position: relative;
-  top: -40px;
 }
 .v .vlist .vcard .vquote .vcontent {
   font-size: 15px;
@@ -2997,4 +2997,76 @@ div.vcontrol {
 }
 .txt-right {
   display: none !important;
+}
+.posts-expand .post-tags a {
+  background: #84b4ba;
+  border-bottom: none;
+  padding: 1px 5px;
+  border-radius: 5px !important;
+}
+/*归档页样式优化*/
+.my-post-time {
+  position: absolute;
+  color: #fff;
+  background-color: #49b1f5;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+}
+a,
+span.exturl {
+  border-bottom: 0px solid #999;
+}
+.mypost {
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.my-post-title-link:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "📚";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  line-height: 18px;
+}
+a.my-post-title-link:hover {
+  color: #3090e4;
+}
+a.my-post-title-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.my-post-title {
+  display: block;
+  margin-left: 5rem;
+  color: #4c4948;
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.my-post-header {
+  position: top;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.my-post-title-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+.my-post-meta {
+  position: absolute;
+  color: #99a9bf;
+  width: 80px;
 }

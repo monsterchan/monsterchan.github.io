@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chenkequan.cn/photos/index.html</loc>
+    
+    <lastmod>2020-02-11T14:18:49.030Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://chenkequan.cn/tags/index.html</loc>
     
     <lastmod>2020-02-11T03:33:22.140Z</lastmod>
@@ -17,13 +24,6 @@
   
   <url>
     <loc>https://chenkequan.cn/links/index.html</loc>
-    
-    <lastmod>2020-02-11T03:33:22.139Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chenkequan.cn/photos/index.html</loc>
     
     <lastmod>2020-02-11T03:33:22.139Z</lastmod>
     
