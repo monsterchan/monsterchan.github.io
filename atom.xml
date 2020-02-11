@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shawn</title>
+  <icon>https://chenkequan.cn/icon.png</icon>
+  <subtitle>Just for Best</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://chenkequan.cn/"/>
+  <updated>2020-02-11T03:33:22.136Z</updated>
+  <id>https://chenkequan.cn/</id>
+  
+  <author>
+    <name>Shawn</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安康</title>
+    <link href="https://chenkequan.cn/post/4c0b8182.html"/>
+    <id>https://chenkequan.cn/post/4c0b8182.html</id>
+    <published>2019-07-03T14:16:01.000Z</published>
+    <updated>2020-02-11T03:33:22.136Z</updated>
+    
+    <summary type="html">
+    
+      第一次出差，一次难忘的旅行
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://chenkequan.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="旅行" scheme="https://chenkequan.cn/tags/%E6%97%85%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随笔（1）</title>
+    <link href="https://chenkequan.cn/post/96f79f5c.html"/>
+    <id>https://chenkequan.cn/post/96f79f5c.html</id>
+    <published>2016-06-04T16:00:00.000Z</published>
+    <updated>2020-02-11T03:33:22.137Z</updated>
+    
+    <summary type="html">
+    
+      用一年学说话，用一生学闭嘴
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://chenkequan.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="随笔" scheme="https://chenkequan.cn/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
