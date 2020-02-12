@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chenkequan.cn/photos/index.html</loc>
+    <loc>https://chenkequan.cn/links/index.html</loc>
     
-    <lastmod>2020-02-11T14:18:49.030Z</lastmod>
+    <lastmod>2020-02-12T13:57:40.658Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://chenkequan.cn/tags/index.html</loc>
+    <loc>https://chenkequan.cn/post/4c0b8182.html</loc>
     
-    <lastmod>2020-02-11T03:33:22.140Z</lastmod>
+    <lastmod>2020-02-12T04:22:44.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://chenkequan.cn/photos/index.html</loc>
+    
+    <lastmod>2020-02-12T01:41:40.240Z</lastmod>
     
   </url>
   
@@ -23,9 +30,9 @@
   </url>
   
   <url>
-    <loc>https://chenkequan.cn/links/index.html</loc>
+    <loc>https://chenkequan.cn/tags/index.html</loc>
     
-    <lastmod>2020-02-11T03:33:22.139Z</lastmod>
+    <lastmod>2020-02-11T03:33:22.140Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>https://chenkequan.cn/about/index.html</loc>
     
     <lastmod>2020-02-11T03:33:22.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://chenkequan.cn/post/4c0b8182.html</loc>
-    
-    <lastmod>2020-02-11T03:33:22.136Z</lastmod>
     
   </url>
   
