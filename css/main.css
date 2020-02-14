@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #61ff29;
+  background: #fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2618,19 +2618,23 @@ canvas {
   z-index: -1;
 }
 body {
-  background: url("/images/field.jpg");
+  background-position: left bottom !important;
+  background: url("https://i.loli.net/2020/02/13/kPwvoRrJChtai4q.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
 .sidebar {
-  background: url("/images/silder.jpg");
+  background: url("https://i.loli.net/2020/02/13/d5i41IljcBo8EWn.jpg");
   display: block;
   width: 320px;
-  background-size: 320px, 659px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: #fff !important;
 }
 .main-inner {
@@ -3069,4 +3073,16 @@ a.my-post-title-link {
   position: absolute;
   color: #99a9bf;
   width: 80px;
+}
+.container .main-inner {
+  width: 1314px;
+}
+.content {
+  margin-top: 0;
+}
+.use-motion .post-block,
+.use-motion .pagination,
+.use-motion .comments {
+  margin-top: 20px;
+  margin-bottom: 52px;
 }

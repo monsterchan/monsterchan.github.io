@@ -49,15 +49,13 @@
   };
 </script>
 
-  <meta name="description" content=".content{     padding: 0px;     margin-top: 0px !important;     }   .container{   background-color: #000000;   }       .use-motion .post-block, .use-motion .pagination, .use-motion .comments{">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="光影流年">
 <meta property="og:url" content="https://chenkequan.cn/photos/index.html">
 <meta property="og:site_name" content="Shawn">
-<meta property="og:description" content=".content{     padding: 0px;     margin-top: 0px !important;     }   .container{   background-color: #000000;   }       .use-motion .post-block, .use-motion .pagination, .use-motion .comments{">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-12T01:41:40.281Z">
-<meta property="article:modified_time" content="2020-02-12T01:41:40.240Z">
+<meta property="article:published_time" content="2020-02-13T05:15:33.514Z">
+<meta property="article:modified_time" content="2020-02-13T05:15:33.409Z">
 <meta property="article:author" content="Shawn">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="hexo">
@@ -186,11 +184,6 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
-
-  </li>
         <li class="menu-item menu-item-top">
 
     <a href="/top/" rel="section"><i class="fa fa-fw fa-signal"></i>热榜</a>
@@ -219,6 +212,11 @@
         <li class="menu-item menu-item-movies">
 
     <a href="/movies" rel="section"><i class="fa fa-fw fa-film"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-mesboard">
+
+    <a href="/mesboard/" rel="section"><i class="fa fa-fw fa-comment"></i>留言</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -295,304 +293,156 @@
       
       
       <div class="post-body">
-          <style type="text/css">
-    .content{
-    padding: 0px;
-    margin-top: 0px !important;
-    }
-  .container{
-  background-color: #000000;
-  }  
-    .use-motion .post-block, .use-motion .pagination, .use-motion .comments{
-    background-color: #121212 !important;
-    padding: 0px;
-    box-shadow: none;
-    }
-    .posts-expand .post-body img{
-        padding: 1px;
-    }
-.live2d-widget-container{
-   display: none !important;
+        
+<style type="text/css">
+ //.main{
+ //  margin-top: -59px;
+ //}
+.posts-expand .post-title {
+  display: none!important
 }
-.main{
-padding-bottom: 0px;
-}
-.aplayer-body{
-   display: none !important;
-}
-.aplayer-lrc{
- display: none !important;
-}
-.v .vwrap{
-margin-top:90px;
-}
-    .footer{
-        display: none !important;
-    }
-
-     /*不展示底部*/
-     .footer-inner{
-         display: none !important;
-     }
-
-    .v * {
-        color: #f4f4f4 !important;
-    }
-
-    .v .vwrap .vmark .valert .vcode {
-        background: #00050b !important;
-    }
-
-     /*不展示侧栏*/
-     .sidebar-toggle{
-         display: none !important;
-     }
-
-    /*修改相册页面内容宽度为全屏*/
-    .main-inner{
-        width: 100%;
-        margin-top: unset;
-    }
-
-    /*修改主体页面样式*/
-    .main {
-        padding-bottom: 150px;
-        margin-top: 0px;
-        background: #121212;
-    }
-
-    /*body体样式*/
-    body {
-        background-image: unset;
-        background-attachment: unset;
-        background-size: 100%;
-    }
-
-    .header{
-        background: rgba(28, 25, 25, 0.6);
-        border-bottom: unset;
-    }
-
-    .menu .menu-item a{
-        font-weight: 300;
-           color: #222;
-    }
-
-    .imgbox{
-      width: 100%;
-      overflow: hidden;
-      border-right: 0px solid #bcbcbc;
-    }
-
-    .box{
-        visibility: visible;
-        overflow: auto; 
-        zoom: 1;
-    }
-
-    .box li{
-        float: left;
-        width: 25%;  /*每个框占25%*/
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        list-style: none;
-        margin: 0;
-        /*display: inline;*/
-        padding: 0;
-        height: 400px;   /*固定高度*/
-    }
-
-    .box li span{
-        display: block;
-        padding: 4% 7% 10% 7%;
-        min-height: 80px;
-        background: #fff;
-        color: #fff;
-        font-size: 16px;
-        background: #121212;
-        font-weight: 600;
-        line-height: 26px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    img.imgitem{
-        padding: unset;
-        padding: unset;
-        border: unset;
-        position: relative;
-        padding: 0px;
-        width: 100%;
-        height: 350px;
-    }
-
-    div#comments.comments.v {
-        border: 0px;
-        margin: auto !important;
-        margin-top: unset;
-        margin-left: unset;
-        margin-right: unset;
-        width: 60%;
-        padding-top: 50px;
-    }
-
-    div#posts.posts-expand {
-        border: unset;
-        padding: unset;
-        margin-bottom: 10px;
-    }
-
-    .valine .vlist .vcard .vcomment-body .vhead .vname{
-        color: #fff;
-    }
-
-    .valine .vlist .vcard .vcomment-body .text-wrapper .vcomment p{
-        color: #fff;
-    }
-
-    .box p{
-        display: block;
-        background: #121212;
-        color: #fff;
-        font-size: 12px;
-        font-family: 'SwisMedium';
-        text-align: center;
-    }
-
-    .box span strong{
-        background: rgba(0,0,0,0.4);
-        padding: 20px;
-        font-family: serif, sans-serif;
-    }
-
-    .posts-expand .post-title {
-        display: none;
-    }
-    .title{
-        display: inline-block;
-        vertical-align: middle;
-        font: 85px/250px 'ChaletComprimeMilanSixty';
-        background-position: left top !important;
-        color: #fff;
-        background-color: black !important;
-        background-size: 100% auto !important; 
-        -webkit-background-size: cover; 
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        width: 100%;
-        text-align: center;
-        border: unset;
-        height: 618px;
-        cursor: unset !important;
-        -webkit-box-sizing: border-box;
-        /*box-sizing: border-box;*/
-    }
-    .btn-more-posts{
-        display: inline-block;
-        vertical-align: middle;
-        font: 85px/250px 'ChaletComprimeMilanSixty';
-        color: #000;
-        width: 100%;
-        text-align: center;
-        border: unset;
-        height: 400px;
-        background-color: #121212;
-        /*-webkit-box-sizing: border-box;*/
-        /*box-sizing: border-box;*/
-    }
-
-@media (max-width: 767px){
-    .box li {
-        width: 100%;
-        height: auto;
-    }
-    .title {
-        height: 200px;
-    }
-
-    .posts-expand .post-body img{
-        box-sizing: none;
-        padding: 0px !important;
-    }
-
-    .box span {
-        min-height: 80px;
-        border-right: unset;
-        font-size: 17px;
-    }
-    .box p{
-        border-right: unset;
-        font-size: 12px;
-    }
-
-    .posts-expand {
-        margin: unset;
-    }
-    div#comments.comments.v {
-        width: 96%;
-        padding-top: 50px;
-    }
+.posts-expand .post-body .fancybox img{
+      margin: 0 ;
+    margin-top: -45px;
 }
 
-@media (min-width: 1300px){
-    .container .main-inner{
-        width: 100%;
-    }
-}
+	.box{
+		visibility: visible;
+		overflow: auto;
+		zoom: 1;
+	}
 
+	.box li{
+		float: left;
+    	width: 33.3%;  /*每个框占25%*/
+    	position: relative;
+    	overflow: hidden;
+    	text-align: center;
+    	list-style: none;
+    	margin: 0;
+    	/*display: inline;*/
+    	padding: 0;
+    	height: 295px;   /*固定高度*/
+	}
+
+	.box li span{
+		display: block;
+    	min-height: 33px;
+    	background: #fff;
+    	padding-top: 2px;
+    	color: #fff;
+    	font-size: 16px;
+    	background: #121212;
+    	font-weight: 500;
+    	line-height: 26px;
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+	}
+
+    .img.imgitem{
+		padding: unset;
+		padding: unset;
+		border: unset;
+		position: relative;
+		padding: 0px;
+		width: 100%;
+	//	height: unset;
+	}
+.post-body .image-caption, .post-body .figure .caption{
+    display: none;
+}
+        .link-info {
+        	font-size: 21px;
+        	max-width: 100%;
+        	font-weight: 500;
+        	font-family: cursive
+        }
+
+        @media (max-width: 767px){
+          .box li {
+            width: 100%;
+            height: auto;
+          }
+          .title {
+            height: 200px;
+          }
+
+          .posts-expand .post-body img{
+            box-sizing: none;
+            padding: 0px !important;
+          }
+
+          .box span {
+            min-height: 80px;
+            border-right: unset;
+            font-size: 17px;
+          }
+          .box p{
+            border-right: unset;
+            font-size: 12px;
+          }
+
+          .posts-expand {
+            margin: unset;
+          }
+          div#comments.comments.v {
+            width: 96%;
+            padding-top: 50px;
+          }
+        }
 </style>
-
+<div>
+    <p><a href="https://i.loli.net/2020/02/13/lRwGCPAaLYxsNkn.jpg" target="_blank" class="fancybox fancybox.image" rel="group noopener external nofollow noreferrer"><img src="https://i.loli.net/2020/02/13/lRwGCPAaLYxsNkn.jpg" /></a></p>
 <!-- 主体部分 -->
 <div id="box" class="box"></div>
 
 <script type="text/javascript">
 
-function loadXMLDoc(xmlUrl) 
+function loadXMLDoc(xmlUrl)
 {
-    try //Internet Explorer
-    {
-        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
-    }
-    catch(e)
-    {
-      try //Firefox, Mozilla, Opera, etc.
-        {
-          xmlDoc=document.implementation.createDocument("","",null);
-        }
-      catch(e) {alert(e.message)}
-    }
+	try //Internet Explorer
+	{
+		xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+	}
+	catch(e)
+	{
+	  try //Firefox, Mozilla, Opera, etc.
+	    {
+		  xmlDoc=document.implementation.createDocument("","",null);
+	    }
+	  catch(e) {alert(e.message)}
+	}
 
-    try 
-    {
-          xmlDoc.async=false;
-          xmlDoc.load(xmlUrl);
-    }
-    catch(e) {
-        try //Google Chrome  
-          {  
-            var chromeXml = new XMLHttpRequest();
-            chromeXml.open("GET", xmlUrl, false);
-            chromeXml.send(null);
-            xmlDoc = chromeXml.responseXML.documentElement;                 
-            //alert(xmlDoc.childNodes[0].nodeName);
-            //return xmlDoc;    
-          }  
-          catch(e)  
-          {  
-              alert(e.message)  
-          }                
-    }
-    return xmlDoc; 
+	try
+	{
+		  xmlDoc.async=false;
+		  xmlDoc.load(xmlUrl);
+	}
+	catch(e) {
+		try //Google Chrome
+		  {
+			var chromeXml = new XMLHttpRequest();
+			chromeXml.open("GET", xmlUrl, false);
+			chromeXml.send(null);
+			xmlDoc = chromeXml.responseXML.documentElement;
+			//alert(xmlDoc.childNodes[0].nodeName);
+			//return xmlDoc;
+		  }
+		  catch(e)
+		  {
+			  alert(e.message)
+		  }
+	}
+	return xmlDoc;
 }
 
 xmlDoc=loadXMLDoc("https://photos-1258744191.cos.ap-guangzhou.myqcloud.com");
 
 var urls = xmlDoc.getElementsByTagName('Key');
 var date = xmlDoc.getElementsByTagName('LastModified');
-var wid = 350;
-var showNum = 21; //每个相册一次展示多少照片
-if ((window.innerWidth) > 1200) { wid = (window.innerWidth * 3) / 18;}
+var wid = 0;  //图片高度
+var showNum = 8; //每个相册一次展示多少照片
+//if ((window.innerWidth) > 1200) { wid = (window.innerWidth * 3) / 18;}
 var box = document.getElementById('box');
 var i = 0;
 
@@ -600,70 +450,74 @@ var content = new Array();
 var tmp=0;
 var kkk=-1;
 for (var t = 0; t < urls.length ; t++) {
-    var bucket=urls[t].innerHTML;
-    var length=bucket.indexOf('/');
-    if(length===bucket.length-1){
-        kkk++;
-        content[kkk]=new Array();
-        content[kkk][0]={'url':bucket,'date':date[t].innerHTML.substring(0,10)};
-        tmp=1;
-    }
-    else {
-        content[kkk][tmp++]={'url':bucket.substring(length+1),'date':date[t].innerHTML.substring(0,10)};
-    }
+	var bucket=urls[t].innerHTML;
+	var length=bucket.indexOf('/');
+	if(length===bucket.length-1){
+		kkk++;
+		content[kkk]=new Array();
+		content[kkk][0]={'url':bucket,'date':date[t].innerHTML.substring(0,10)};
+		tmp=1;
+	}
+	else {
+		content[kkk][tmp++]={'url':bucket.substring(length+1),'date':date[t].innerHTML.substring(0,10)};
+	}
 }
-
+//封面
 for (var i = 0; i < content.length; i++) {
-    var conBox=document.createElement("div");
-    conBox.id='conBox'+i;
-    box.appendChild(conBox);
-    var item=document.createElement("div");
-    var title=content[i][0].url;
-    item.innerHTML="<div class=title style=background:url(https://photos-1258744191.cos.ap-guangzhou.myqcloud.com/" + title + "封面.jpg"+");background-repeat:no-repeat;><span style=display:inline;><strong style=color:#f0f3f6; >" + title.substring(0,title.length - 1) + "</strong></span></div>";
-    conBox.appendChild(item);
+	var conBox=document.createElement("div");
+	conBox.id='conBox'+i;
+	box.appendChild(conBox);
+	var item=document.createElement("div");
+	var title=content[i][0].url;
+	item.innerHTML="<div class= 'no-icon note primary' ><span class='link-info' style=display:inline;>" + title.substring(0,title.length - 1) + "</span></div>";
+	conBox.appendChild(item);
 
         for (var j = 1; j < content[i].length && j < showNum+1; j++) {
-            var con=content[i][j].url;
-        var item=document.createElement("li");
-        if(con.substring(0,con.length-4) != "封面"){
-            item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem data-src=https://photos-1258744191.cos.ap-guangzhou.myqcloud.com/" + title + con +" alt=" + con + "></div><span>" + con.substring(0,con.length-4);
-            conBox.appendChild(item);
-        }
-    }
-    if(content[i].length > showNum){
-        var moreItem=document.createElement("button");
-        moreItem.className = "btn-more-posts";
-        moreItem.id = "more" + i;
-        moreItem.value = showNum + 1;
-        let cur = i;
-        moreItem.onclick = function (){
-            moreClick(this,cur,content[cur],content[cur][0].url);
-        }
-        moreItem.innerHTML="<span style=display:inline;><strong style=color:#f0f3f6;>加载更多</strong></span>";
-        conBox.appendChild(moreItem);
-    }
+	        var con=content[i][j].url;
+		var item=document.createElement("li");
+		if(con.substring(0,con.length-4) != "封面"){
+			item.innerHTML="<div><div class=imgbox id=imgbox ><img class=imgitem src=https://photos-1258744191.cos.ap-guangzhou.myqcloud.com/" + title + con +" alt=" + con + "></div><span>" + con.substring(0,con.length-4) + "</span></div>";
+			conBox.appendChild(item);
+		}
+	}
+	if(content[i].length > showNum){
+		var moreItem=document.createElement("button");
+		moreItem.className = "btn-more-posts";
+		moreItem.id = "more" + i;
+		moreItem.value = showNum + 1;
+		let cur = i;
+		moreItem.onclick = function (){
+			moreClick(this,cur,content[cur],content[cur][0].url);
+		}
+		moreItem.innerHTML="<span style=display:inline;><span style=color:#f0f3f6;>加载更多</span></span>";
+		conBox.appendChild(moreItem);
+	}
 }
 
 function moreClick(obj,cur,cont,title){
-    var parent = obj.parentNode;
-    parent.removeChild(obj);
-    var j=obj.value;
-    var begin=j;
-    for ( ; j < cont.length && j < Number(showNum) + Number(begin); j++) {
-        var con=cont[j].url;
-        var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem data-src=https://photos-1258744191.cos.ap-guangzhou.myqcloud.com/"+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4);
-        parent.appendChild(item);
-        var v=item.getElementsByTagName('img');
-        v[0].id=imgid;
-        imgid++;
-    }
-    if(cont.length > j){
-        obj.value=j;
-        parent.appendChild(obj);
-    }
+	var parent = obj.parentNode;
+	parent.removeChild(obj);
+	var j=obj.value;
+	var begin=j;
+	for ( ; j < cont.length && j < Number(showNum) + Number(begin); j++) {
+		var con=cont[j].url;
+		var item=document.createElement("li");
+		item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src=https://photos-1258744191.cos.ap-guangzhou.myqcloud.com/"+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4);
+		parent.appendChild(item);
+		var v=item.getElementsByTagName('img');
+		v[0].id=imgid;
+		imgid++;
+	}
+	if(cont.length > j){
+		obj.value=j;
+		parent.appendChild(obj);
+	}
 }
 </script>
+</div>
+
+
+        
       </div>
       
       
@@ -732,10 +586,11 @@ function moreClick(obj,cur,cont,title){
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Shawn"
-      src="/images/touxiang.jpeg">
+      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">Shawn</p>
   <div class="site-description" itemprop="description">愿你我变得更好！</div>
 </div>
+<!--
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
@@ -752,12 +607,12 @@ function moreClick(obj,cur,cont,title){
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-          
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+-->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
         <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
@@ -897,13 +752,14 @@ function moreClick(obj,cur,cont,title){
 <meting-js
 	server="netease"
 	type="playlist"
-	id="2856157420"
+	id="3220223344"
 	fixed="true"
 	autoplay="false"
 	theme="#f37055"
 	loop="all"
 	order="random"
-	lrcType:"0"
+	lrcType:"3"
+
 	preload="metadata"
 	volume="0.5"
 	mutex="true"
@@ -1061,11 +917,14 @@ function moreClick(obj,cur,cont,title){
 
 
 <!-- 爆炸烟花 -->
+<!--
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script type="text/javascript" src="/js/src/firework.js"></script>
-<!--
+-->
+
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!--
 <script type="text/javascript" src="/js/src/clicksocialvalue.js"></script>
 -->
 <!-- linkcard -->
@@ -1131,5 +990,5 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":180,"height":365,"hOffset":50,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.9,"opacityOnHover":1},"dialog":{"enable":false,"hitokoto":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":180,"height":365,"hOffset":119,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.9,"opacityOnHover":1},"dialog":{"enable":false,"hitokoto":true},"log":false});</script></body>
 </html>

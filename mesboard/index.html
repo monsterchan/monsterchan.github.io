@@ -49,13 +49,13 @@
   };
 </script>
 
-  <meta name="description" content="愿你我变得更好！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shawn">
-<meta property="og:url" content="https://chenkequan.cn/archives/2019/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="留言板">
+<meta property="og:url" content="https://chenkequan.cn/mesboard/index.html">
 <meta property="og:site_name" content="Shawn">
-<meta property="og:description" content="愿你我变得更好！">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-13T05:15:33.405Z">
+<meta property="article:modified_time" content="2020-02-13T05:15:33.309Z">
 <meta property="article:author" content="Shawn">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="hexo">
@@ -71,7 +71,7 @@
 <meta property="article:tag" content="web开发">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://chenkequan.cn/archives/2019/">
+<link rel="canonical" href="https://chenkequan.cn/mesboard/">
 
 
 <script id="page-configurations">
@@ -83,7 +83,8 @@
   };
 </script>
 
-  <title>归档 | Shawn</title>
+  <title>留言板 | Shawn
+  </title>
   
     <script>
       function sendPageView() {
@@ -265,62 +266,109 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
           <div class="content">
             
 
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">留言板
+</h2>
+
+<div class="post-meta">
   
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+
+</div>
+
+</header>
 
       
-    <div class="collection-year">
-      <h2 class="collection-header">2019</h2>
-    </div>
+      
+      
+      <div class="post-body">
+             
+<div>
+<style type="text/css">
+// .main{
+ //  margin-top: -59px;
+// }
 
- <!-- <article itemscope itemtype="http://schema.org/Article"> -->
-  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
-<!--    <header class="post-header">    -->
-    <header class="my-post-header">
- <!--      <div class="post-meta">      -->
-      <div class="my-post-meta">
-  <!--       <time itemprop="dateCreated"  -->
-         <time class="my-post-time" itemprop="dateCreated"
-              datetime="2019-07-03T22:16:01+08:00"
-              content="2019-07-03">
-          07-03
-        </time>
-      </div>
+ .posts-expand .post-title {
+   display: none!important
+ }
+.posts-expand .post-body .fancybox img{
+    margin: 0 auto 25px;
+    margin-top: -65px;
+}
+.logo {
+	color: #f35626;
+	background-image: linear-gradient(92deg,#f35626 0,#feab3a 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: hue 10s infinite linear;
+	font-size: 26px;
+	vertical-align: -1px
+}
 
-  <!--      <h3 class="post-title">     -->
-      <h3 class="my-post-title">
-             <a class="my-post-title-link" href="/post/4c0b8182.html" itemprop="url">
-   <!--          <a class="post-title-link" href="/post/4c0b8182.html" itemprop="url">  -->
-            <span itemprop="name">安康</span>
-          </a>
-      </h3>
+@media(max-width:1000px) {
+  .main {
+    margin-top: 0!important
+  }
+}
 
-    </header>
-  </article>
+@keyframes hue {
+  from {
+    filter: hue-rotate(0)
+  }
 
+  to {
+    filter: hue-rotate(-360deg)
+  }
+}
+</style>
 
-    </div>
+  <div>
+    <div><img src="https://i.loli.net/2020/02/13/Rl7ETbMQZ8o2kCK.jpg" /></div>
+     <div align="center" style="margin-top:-20px">================&gt; 来访的第&nbsp;<font color="red"><span class="busuanzi-value logo" id="busuanzi_value_site_uv">19458</span></font>位小伙伴，你好呀~ &lt;================</div>
+        <div align="center" style="margin-top:-20px;margin-left:-29px">
+         <br />
+         <p>🍻 这是一个有问必答，畅所欲言的留言区</p>
+         <br />
+         <p style="margin-top:-25px">🍪博客美化、友链互换、学习交流…</p>
+         <br />
+         <p style="margin-top:-25px">🍭 也欢迎你对本站提出一些建议</p>
+         <br />
+        </div>
   </div>
-  
-  
-  
+</div>
 
-  
 
+        <!--加入相册-->
+      
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+  </div>
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -719,6 +767,16 @@
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://chenkequan.cn/mesboard/',]
+      });
+      });
+  </script>
  <!--
  -->
  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>

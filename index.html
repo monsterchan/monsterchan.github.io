@@ -183,11 +183,6 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
-
-  </li>
         <li class="menu-item menu-item-top">
 
     <a href="/top/" rel="section"><i class="fa fa-fw fa-signal"></i>热榜</a>
@@ -216,6 +211,11 @@
         <li class="menu-item menu-item-movies">
 
     <a href="/movies" rel="section"><i class="fa fa-fw fa-film"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-mesboard">
+
+    <a href="/mesboard/" rel="section"><i class="fa fa-fw fa-comment"></i>留言</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -270,6 +270,381 @@
             
 <!--自定义首页页面-->
 
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+.glyphicon-chevron-left{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    line-height: 36px;
+    text-align: center;
+    opacity: .5;
+    vertical-align: middle;
+    background: rgba(0,0,0);
+    left: 5px;
+    top: 45%;
+    color: #fff;
+    font-family: "宋体";
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.glyphicon-chevron-left:before{
+  content: "<";
+}
+.glyphicon-chevron-right{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    line-height: 36px;
+    text-align: center;
+    opacity: .5;
+    vertical-align: middle;
+    background: rgba(0,0,0);
+    top: 45%;
+    right: 5px;
+    color: #fff;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "宋体";
+    display: none;
+}
+.glyphicon-chevron-right:before{
+  content: ">";
+}
+
+/*设置鼠标移入显示左右切换按钮*/
+#myCarousel:hover .glyphicon-chevron-left,
+#myCarousel:hover .glyphicon-chevron-right{
+  display: block;
+}
+
+/*设置手机端不展示轮播图*/
+@media (max-width: 767px){
+  .rights{
+    display: none;
+  }
+  .carousel{
+    display: none;
+  }
+  .slide{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .tag-cloud{
+    display: none;
+  }
+}
+
+.carousel{
+  width: 64%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left{
+  left: 9px;
+}
+
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 0px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+
+.carousel-indicators {
+  opacity: 0.4;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  text-indent: -999px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.24);
+}
+.carousel-indicators .active {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: -14px;
+  }
+}
+.tag-cloud-tags {
+margin-top: 15px
+}
+</style>
+<div width="100%" height="420px" style="border: 0px; overflow: hidden; border-radius: 10px;" scrolling="no">
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left" >
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+		
+		
+
+			<li data-target="#myCarousel" data-slide-to="0"></li>
+			
+
+		
+
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			
+
+		
+		</ol>
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner" style="height: 370px; border-radius: 10px; width: 100%;">
+
+		
+		 
+
+	    	
+				<a class="item active" href="/" target="_blank" style="height: 100%;">
+					<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/blog-welcome.png"   style="width: 100%; height: 100%" >
+				</a>
+				
+				
+
+		
+
+	    	
+					<a class="item" href="/books/" target="_blank" style="height: 100%;">
+						<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/tuijianread.png"  style="width: 100%; height: 100%;" >
+					</a>
+			
+
+		
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+		</a>
+	</div>
+			<div class="rights" style="width:33%;height:300px;margin-right:0;margin-left:36px;float:left">
+  		<iframe class="blog-weather" width="420" scrolling="no" height="15%" frameborder="0"
+      allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&icon=1&py=dongguan&num=3&site=12">
+      </iframe>
+      <div style="height:9px"></div>
+      <span >
+      <a href="/about/" target="_blank" style="text-align:right;width:100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/about.png"
+          width="100%">
+      </a>
+      </span>
+      <div style="height:9px"></div>
+      <span >
+      <a href="/books/" target="_blank" style="text-align:right;width:100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/read.png"
+          width="100%">
+      </a>
+      </span>
+      <div style="height:9px"></div>
+      <span >
+      <a href="/photos/" target="_blank" style="text-align:right;width:100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/photo.png"
+          width="100%">
+      </a>
+      </span>
+      <div style="height:9px"></div>
+      <span >
+      <a href="/mesboard/" target="_blank" style="text-align:right;width:100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/foot.png"
+          width="100%">
+      </a>
+      </span>
+  		</div>
+
+</div>
+ <!--标签云-->
+            <div class="tag-cloud">
+              <div class="tag-cloud-tags" id="tags">
+                <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 16px; color: #fff">旅行</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 16px; color: #fff">随笔</a>
+              </div>
+            </div>
+            <br>
+
+            <script type="text/javascript">
+               var alltags= document.getElementById("tags");
+               var tags=alltags.getElementsByTagName("a");
+               for (var i = tags.length - 1; i >= 0; i--) {
+                 var r=Math.floor(Math.random()*75+130);
+                 var g=Math.floor(Math.random()*75+100);
+                 var b=Math.floor(Math.random()*75+80);
+                 tags[i].style.background = "rgb("+r+","+g+","+b+")";
+               }
+            </script>
+
 
 
   <div class="posts-expand">
@@ -280,7 +655,7 @@
     <link itemprop="mainEntityOfPage" href="https://chenkequan.cn/post/4c0b8182.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpeg">
+      <meta itemprop="image" content="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
       <meta itemprop="name" content="Shawn">
       <meta itemprop="description" content="愿你我变得更好！">
     </span>
@@ -384,7 +759,7 @@
     <link itemprop="mainEntityOfPage" href="https://chenkequan.cn/post/96f79f5c.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpeg">
+      <meta itemprop="image" content="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
       <meta itemprop="name" content="Shawn">
       <meta itemprop="description" content="愿你我变得更好！">
     </span>
@@ -536,10 +911,11 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Shawn"
-      src="/images/touxiang.jpeg">
+      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">Shawn</p>
   <div class="site-description" itemprop="description">愿你我变得更好！</div>
 </div>
+<!--
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
@@ -556,12 +932,12 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-          
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+-->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
         <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
@@ -701,13 +1077,14 @@
 <meting-js
 	server="netease"
 	type="playlist"
-	id="2856157420"
+	id="3220223344"
 	fixed="true"
 	autoplay="false"
 	theme="#f37055"
 	loop="all"
 	order="random"
-	lrcType:"0"
+	lrcType:"3"
+
 	preload="metadata"
 	volume="0.5"
 	mutex="true"
@@ -865,11 +1242,14 @@
 
 
 <!-- 爆炸烟花 -->
+<!--
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script type="text/javascript" src="/js/src/firework.js"></script>
-<!--
+-->
+
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!--
 <script type="text/javascript" src="/js/src/clicksocialvalue.js"></script>
 -->
 <!-- linkcard -->
@@ -925,5 +1305,5 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":180,"height":365,"hOffset":50,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.9,"opacityOnHover":1},"dialog":{"enable":false,"hitokoto":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":180,"height":365,"hOffset":119,"vOffset":0},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.9,"opacityOnHover":1},"dialog":{"enable":false,"hitokoto":true},"log":false});</script></body>
 </html>
