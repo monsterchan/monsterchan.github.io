@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5cd295;
+  background: #a6ff42;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3085,4 +3085,8 @@ a.my-post-title-link {
 .use-motion .comments {
   margin-top: 20px;
   margin-bottom: 52px;
+}
+.site-uv::after {
+  content: "|";
+  padding-left: 10px;
 }
