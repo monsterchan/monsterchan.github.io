@@ -56,8 +56,8 @@
 <meta property="og:site_name" content="Shawn">
 <meta property="og:description" content="世间所有的相遇，都是久别重逢">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-11T03:33:22.140Z">
-<meta property="article:modified_time" content="2020-02-11T03:33:22.140Z">
+<meta property="article:published_time" content="2020-02-14T14:56:40.531Z">
+<meta property="article:modified_time" content="2020-02-14T14:56:39.535Z">
 <meta property="article:author" content="Shawn">
 <meta property="article:tag" content="top">
 <meta property="article:tag" content="文章阅读量排行榜">
@@ -286,32 +286,48 @@
       
       
       <div class="post-body">
-          <div class="my_top_line" id="line"></div>
+        <style>
+#top {
+    text-align: left;
+    margin: -31px 50px 40px 50px;
+    background-color: #fff0;
+    padding: 50px 36px 80px 71px;
+}
+.post-body img {
+margin-top: -130px
+}
+</style>
+<div class="post-body img" ><img  src="https://i.loli.net/2020/02/14/V2GBbmCtAj1RU5W.jpg" /></div>
+<div class="my_top_line" id="line"></div>
 <div id="top"></div>
 
 <script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script>AV.initialize("abjgEzjHH9MKHgJmfwjKRuxY-gzGzoHsz","QnyxXfkHI82ehTHQOmv275Jx");</script>
 <script  type="text/javascript">
-  var time=0
-  var title=""
-  var url=""
+  var time=0,
+   title="",
+   url="",
+  emoji=["🍇","🍈","🍉","🍋","🍎","🍏","🍐","🥝","🍓","🍄","🥦","🍍","🍅"];
   var query = new AV.Query('Counter');
   query.notEqualTo('id',0);
   query.descending('time');
-  query.limit(1000);
+  query.limit(30);
   query.find().then(function (todo) {
-    for (var i=0;i<1000;i++){
+    for (var i=0;i<30;i++){
       var result=todo[i].attributes;
       time=result.time;
       title=result.title;
       url=result.url;
-      var content="<p>"+"<font color='#1C1C1C'>"+"【文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://chenkequan.cn"+url+"'>"+title+"</a>"+"</p>";
+       var emoji1 = emoji[Math.floor(Math.random() * emoji.length)];
+      var content="<p>"+"<font color='#1C1C1C'>"+"【"+emoji1+"文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://chenkequan.cn"+url+"'>"+title+"</a>"+"</p>";
       document.getElementById("top").innerHTML+=content
     }
   }, function (error) {
     console.log("error");
   });
 </script>
+
+        
       </div>
       
       
@@ -560,6 +576,40 @@
 	>
 </meting-js>
 </div>
+
+
+
+<!--
+<div style="margin-top:65px" ><img  src="https://i.loli.net/2020/02/14/V2GBbmCtAj1RU5W.jpg" /></div>
+<div class="my_top_line" id="line"></div>
+<div id="top"></div>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script>AV.initialize("abjgEzjHH9MKHgJmfwjKRuxY-gzGzoHsz","QnyxXfkHI82ehTHQOmv275Jx");</script>
+<script  type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  emoji=["🍇","🍈","🍉","🍋","🍎","🍏","🍐","🥝","🍓","🍄","🥦","🍍","🍅"],
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var i = emoji[Math.floor(Math.random() * emoji.length)];
+      var content="<p>"+"<font color='#1C1C1C'>"+"【"+i+"热度:"+time+"℃】"+"</font>"+"<a href='"+"https://chenkequan.cn"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
+-->
 
 
     </main>
