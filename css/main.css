@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #db3cac;
+  background: #f1d67d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3085,6 +3085,15 @@ a.my-post-title-link {
 .use-motion .comments {
   margin-top: 20px;
   margin-bottom: 52px;
+  transition-duration: 0.15s;
+}
+.animal:hover {
+  transform: scale(1.02);
+  border-radius: 9px;
+  box-shadow: 1px 1px 20px 15px rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.1), 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+.animalforimg:hover {
+  transform: scale(1.03);
 }
 .site-uv::after {
   content: "|";

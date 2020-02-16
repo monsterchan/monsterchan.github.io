@@ -148,7 +148,7 @@
 <link rel="alternate" href="/atom.xml" title="Shawn" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body  itemscope itemtype="http://schema.org/WebPage">
 <script src="/js/src/social-share.min.js"></script>
   <div class="container use-motion">
     <div class="headband"></div>
@@ -156,7 +156,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-<meta name="baidu-site-verification" content="6VWurVhWUo">
+<meta name="baidu-site-verification" content="6VWurVhWUo" />
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
@@ -240,7 +240,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -543,7 +545,7 @@ margin-top: 15px
 </style>
 <div width="100%" height="420px" style="border: 0px; overflow: hidden; border-radius: 10px;" scrolling="no">
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
+	<div id="myCarousel" class="carousel slide animalforimg" data-ride="carousel" data-interval="3500" style="float:left" >
 		<!-- 轮播（Carousel）指标 -->
 		<ol class="carousel-indicators">
 		
@@ -567,7 +569,7 @@ margin-top: 15px
 
 	    	
 				<a class="item active" href="/" target="_blank" style="height: 100%;">
-					<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/blog-welcome.png" style="width: 100%; height: 100%">
+					<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/blog-welcome.png"   style="width: 100%; height: 100%" >
 				</a>
 				
 				
@@ -576,7 +578,7 @@ margin-top: 15px
 
 	    	
 					<a class="item" href="/books/" target="_blank" style="height: 100%;">
-						<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/tuijianread.png" style="width: 100%; height: 100%;">
+						<img src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/tuijianread.png"  style="width: 100%; height: 100%;" >
 					</a>
 			
 
@@ -593,32 +595,37 @@ margin-top: 15px
 		</a>
 	</div>
 			<div class="rights" style="width:33%;height:300px;margin-right:0;margin-left:36px;float:left">
-  		<iframe class="blog-weather" width="420" scrolling="no" height="15%" frameborder="0" allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&icon=1&py=dongguan&num=3&site=12">
+  		<iframe class="blog-weather animalforimg" width="420" scrolling="no" height="15%" frameborder="0"
+      allowtransparency="true" src="https://i.tianqi.com/index.php?c=code&id=12&icon=1&py=dongguan&num=3&site=12">
       </iframe>
       <div style="height:9px"></div>
-      <span>
+      <div class="animalforimg">
       <a href="/about/" target="_blank" style="text-align:right;width:100%">
-          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/about.png" width="100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/about.png"
+          width="100%">
       </a>
-      </span>
+      </div>
       <div style="height:9px"></div>
-      <span>
+      <div class="animalforimg">
       <a href="/books/" target="_blank" style="text-align:right;width:100%">
-          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/read.png" width="100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/read.png"
+          width="100%">
       </a>
-      </span>
+      </div>
       <div style="height:9px"></div>
-      <span>
+      <div class="animalforimg">
       <a href="/photos/" target="_blank" style="text-align:right;width:100%">
-          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/photo.png" width="100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/photo.png"
+          width="100%">
       </a>
-      </span>
+      </div>
       <div style="height:9px"></div>
-      <span>
+      <div class="animalforimg">
       <a href="/mesboard/" target="_blank" style="text-align:right;width:100%">
-          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/foot.png" width="100%">
+          <img class="blog-about nofancybox" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/foot.png"
+          width="100%">
       </a>
-      </span>
+      </div>
   		</div>
 
 </div>
@@ -638,16 +645,19 @@ margin-top: 15px
                  var g=Math.floor(Math.random()*75+100);
                  var b=Math.floor(Math.random()*75+80);
                  tags[i].style.background = "rgb("+r+","+g+","+b+")";
+                 tags[i].class.transform="scale(1.03)";
                }
             </script>
 
 
 
   <div class="posts-expand">
+    <div class="animal">
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+
     <link itemprop="mainEntityOfPage" href="https://chenkequan.cn/post/4c0b8182.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -748,10 +758,13 @@ margin-top: 15px
   
   
 
+      </div>
+    <div class="animal">
         
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+
     <link itemprop="mainEntityOfPage" href="https://chenkequan.cn/post/96f79f5c.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -847,6 +860,7 @@ margin-top: 15px
   
   
 
+      </div>
   </div>
 
   
@@ -906,7 +920,8 @@ margin-top: 15px
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Shawn" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
+    <img class="site-author-image" itemprop="image" alt="Shawn"
+      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">Shawn</p>
   <div class="site-description" itemprop="description">愿你我变得更好！</div>
 </div>
@@ -935,10 +950,10 @@ margin-top: 15px
 -->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
@@ -1069,7 +1084,22 @@ margin-top: 15px
   }
 </style>
 <div data-pjax class="aplayer">
-<meting-js server="netease" type="playlist" id="3220223344" fixed="true" autoplay="false" theme="#f37055" loop="all" order="random" lrctype:"3" preload="metadata" volume="0.5" mutex="true" list-max-height="340px">
+<meting-js
+	server="netease"
+	type="playlist"
+	id="3220223344"
+	fixed="true"
+	autoplay="false"
+	theme="#f37055"
+	loop="all"
+	order="random"
+	lrcType:"3"
+
+	preload="metadata"
+	volume="0.5"
+	mutex="true"
+	list-max-height="340px"
+	>
 </meting-js>
 </div>
 
@@ -1140,7 +1170,7 @@ margin-top: 15px
   </div>
 -->
   <div id="days"></div>
-  	
+  	</script>
   	<script language="javascript">
   	function show_date_time(){
   	window.setTimeout("show_date_time()", 1000);
@@ -1183,7 +1213,7 @@ margin-top: 15px
 <!--
     <span class="post-meta-divider">|</span>
 -->
-   <span class="post-meta-item">
+   <span class="post-meta-item"  >
       <span class="post-meta-item-icon">
        <!--  i class="fa fa-eye"/i-->
        <span>本站总访问</span>
