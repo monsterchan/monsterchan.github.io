@@ -57,6 +57,7 @@
 <meta property="og:description" content="书读百遍，其义自见；非淡泊无以明志，非宁静无以致远。         .hexo-douban-tabs {     margin-bottom: 15px;     margin-top: 15px; }  .hexo-douban-tab {     padding: 5px; }  .hexo-douban-active {     backgrou">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img9.doubanio.com/view/subject/s/public/s28238985.jpg">
+<meta property="og:image" content="https://img9.doubanio.com/view/subject/s/public/s4646956.jpg">
 <meta property="og:image" content="https://img9.doubanio.com/view/subject/s/public/s5961934.jpg">
 <meta property="article:author" content="Shawn">
 <meta property="article:tag" content="Java">
@@ -382,7 +383,7 @@
     <a class="hexo-douban-tab" id="hexo-douban-tab1" href="javascript:;"
        rel="external">
         在读
-        (1)</a>
+        (2)</a>
     <a class="hexo-douban-tab" id="hexo-douban-tab2" href="javascript:;"
        rel="external">
         想读
@@ -407,6 +408,24 @@
         </div>
         <div class="hexo-douban-meta">2020-02-22
       在读 /  java——多线程 Java 多线程</div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture"><img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s4646956.jpg" referrerPolicy="no-referrer" /></div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/5387402/" rel="external nofollow noreferrer"> 程序员修炼之道</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  Andrew Hunt、David Thomas / 马维达 / 电子工业出版社 / 2011-1 / 55.00元
+
+        </div>
+        <div class="hexo-douban-meta">2020-02-22
+      在读 /  思维 程序设计 计算机 程序员的修炼之道</div>
         <div class="hexo-douban-comments">
   </div>
     </div>
@@ -811,7 +830,7 @@ for (var i = 0; i < firstpages.length; i++) {
 <meting-js
 	server="netease"
 	type="playlist"
-	id="3220223344"
+	id="2856157420"
 	fixed="true"
 	autoplay="false"
 	theme="#f37055"
@@ -826,41 +845,6 @@ for (var i = 0; i < firstpages.length; i++) {
 	>
 </meting-js>
 </div>
-
-
-
-<!--
-<div style="margin-top:65px" ><img  src="https://i.loli.net/2020/02/14/V2GBbmCtAj1RU5W.jpg" /></div>
-<div class="my_top_line" id="line"></div>
-<div id="top"></div>
-
-<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script>AV.initialize("abjgEzjHH9MKHgJmfwjKRuxY-gzGzoHsz","QnyxXfkHI82ehTHQOmv275Jx");</script>
-<script  type="text/javascript">
-  var time=0
-  var title=""
-  var url=""
-  emoji=["🍇","🍈","🍉","🍋","🍎","🍏","🍐","🥝","🍓","🍄","🥦","🍍","🍅"],
-  var query = new AV.Query('Counter');
-  query.notEqualTo('id',0);
-  query.descending('time');
-  query.limit(1000);
-  query.find().then(function (todo) {
-    for (var i=0;i<1000;i++){
-      var result=todo[i].attributes;
-      time=result.time;
-      title=result.title;
-      url=result.url;
-      var i = emoji[Math.floor(Math.random() * emoji.length)];
-      var content="<p>"+"<font color='#1C1C1C'>"+"【"+i+"热度:"+time+"℃】"+"</font>"+"<a href='"+"https://chenkequan.cn"+url+"'>"+title+"</a>"+"</p>";
-      document.getElementById("top").innerHTML+=content
-    }
-  }, function (error) {
-    console.log("error");
-  });
-</script>
--->
-
 
     </main>
 
@@ -1007,8 +991,40 @@ for (var i = 0; i < firstpages.length; i++) {
 
 
 
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
 <!-- 爆炸烟花 -->
