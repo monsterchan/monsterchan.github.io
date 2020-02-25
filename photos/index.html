@@ -925,7 +925,7 @@ function moreClick(obj,cur,cont,title){
 
 <script>
 if (document.querySelectorAll('div.pdf').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js', () => {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {

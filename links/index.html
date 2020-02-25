@@ -442,9 +442,12 @@
         .post-body iframe, .post-body img, .post-body video{
             margin-top: -98px;
         }
+        .notclickn{
+        pointer-events: none;
+        }
         </style>
         <div class="links-content">
-         <p><a href="https://i.loli.net/2020/02/24/NrmO1ve458F2KJj.jpg" target="_blank" class="fancybox fancybox.image" rel="group noopener external nofollow noreferrer"><img src="https://i.loli.net/2020/02/24/NrmO1ve458F2KJj.jpg" /></a></p>
+         <div class="notclickn" ><img  src="https://i.loli.net/2020/02/24/NrmO1ve458F2KJj.jpg" /></div>
         <div class="no-icon note warning">
            <div class="link-info">
             👨‍🎓  大佬们 —— 没有不劳而获的工作，更没有坐享其成的收获
@@ -987,7 +990,7 @@
 
 <script>
 if (document.querySelectorAll('div.pdf').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js', () => {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {

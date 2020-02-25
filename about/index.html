@@ -362,7 +362,9 @@
     content: counter(ol-li);
     counter-increment: ol-li;
 }
-
+.notclickn{
+pointer-events: none;
+}
 @media(max-width:1000px) {
   .main {
     margin-top: 0!important
@@ -381,7 +383,7 @@
 </style>
 
   <div>
-    <div class="img" ><img  src="https://i.loli.net/2020/02/24/kCl8oafePpFyjMx.png" /></div>
+    <div class="img notclickn" ><img  src="https://i.loli.net/2020/02/24/kCl8oafePpFyjMx.png" /></div>
     <div class = "abouttitle">Dream it possible</div>
      <div class="lrctitle">When you dreams come alive you’re unstoppable<br>take a shot, chase the sun, find the beautiful<br>We will glow in the dark turning dust to gold<br>And we’ll dream it possible</div>
      <h4 id="🌥️-个人简介"><a href="#🌥️-个人简介" class="headerlink" title="🌥️ 个人简介"></a>🌥️ 个人简介</h4>
@@ -891,7 +893,7 @@
 
 <script>
 if (document.querySelectorAll('div.pdf').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js', () => {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {

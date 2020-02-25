@@ -322,7 +322,9 @@
 	font-size: 26px;
 	vertical-align: -1px
 }
-
+.notclickn{
+pointer-events: none;
+}
 @media(max-width:1000px) {
   .main {
     margin-top: 0!important
@@ -341,8 +343,8 @@
 </style>
 
   <div>
-    <div><img src="https://i.loli.net/2020/02/24/shaFRVdyYqkU1eN.jpg" /></div>
-     <div align="center" style="margin-top:-20px">================&gt; 来访的第&nbsp;<font color="red"><span class="busuanzi-value logo" id="busuanzi_value_site_uv">19458</span></font>位小伙伴，你好呀~ &lt;================</div>
+    <div class= "notclickn" ><img src="https://i.loli.net/2020/02/24/shaFRVdyYqkU1eN.jpg" /></div>
+     <div  align="center" style="margin-top:-20px">================&gt;来访的第&nbsp;<font color="red"><span class="busuanzi-value logo" id="busuanzi_value_site_uv"></span></font>位小伙伴，你好呀~ &lt;================</div>
         <div align="center" style="margin-top:-20px;margin-left:-29px">
          <br />
          <p>🍻 这是一个有问必答，畅所欲言的留言区</p>
@@ -352,7 +354,12 @@
          <p style="margin-top:-25px">🍭 也欢迎你对本站提出一些建议</p>
          <br />
         </div>
+   <div  align="center" style="margin-top:-20px">================&gt; 下面是来到本站所有的小伙伴🍉~ &lt;================</div>
+
+  <div class= "notclickn" >
+  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=KwvJVOemQWG8fiXOXee87LU4V_M6PpH14XSARpdOUAQ&cl=ffffff&w=a"></script>
   </div>
+  <div  align="center" style="margin-top:20px">================&gt; 来了~就留下脚印吧~ &lt;================</div>
 </div>
 
 
@@ -755,7 +762,7 @@
 
 <script>
 if (document.querySelectorAll('div.pdf').length) {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js', () => {
     document.querySelectorAll('div.pdf').forEach(element => {
       PDFObject.embed(element.getAttribute('target'), element, {
         pdfOpenParams: {
