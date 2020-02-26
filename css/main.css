@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #26264a;
+  background: #378ce2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3321,4 +3321,24 @@ tbody tr:nth-of-type(odd) {
 }
 .cal tbody .cal-today {
   color: #c400f3;
+}
+.darkScheme body {
+  color: #000;
+  background-image: url("https://i.loli.net/2020/02/26/62Xt4UoNDdVM7AK.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.darkScheme .post-copyright {
+  background-color: #ccc;
+}
+.code {
+  background: #f5bcbc;
+}
+.darkScheme .footer {
+  background: #000;
+  color: #000;
+}
+.darkScheme .menu .menu-item a {
+  color: #382323;
 }
