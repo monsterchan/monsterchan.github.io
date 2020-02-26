@@ -1191,7 +1191,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #21ff7e;
+  background: #4eb96e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3340,5 +3340,13 @@ tbody tr:nth-of-type(odd) {
   color: #000;
 }
 .darkScheme .menu .menu-item a {
-  color: #382323;
+  color: #382323 !important;
+}
+.darkScheme .menu-item-active a,
+.darkScheme .menu .menu-item a:hover,
+.darkScheme .menu .menu-item span.exturl:hover {
+  background: #bbb;
+}
+.darkScheme .post-title-link {
+  color: #ad9c9c;
 }
