@@ -82,6 +82,14 @@
     isPost: false
   };
 </script>
+<script>
+  ((w, d) => {
+    'use strict';
+      const userScheme = localStorage.getItem('Scheme');
+      if (!userScheme) return;
+    d.documentElement.className += ' darkScheme';
+  })(window, document);
+</script>
 
   <title>归档 | Shawn</title>
   
@@ -278,10 +286,38 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
       </div>
 
       
+    <div class="collection-year">
+      <h2 class="collection-header">2020</h2>
+    </div>
+
+ <!-- <article itemscope itemtype="http://schema.org/Article"> -->
+  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
+<!--    <header class="post-header">    -->
+    <header class="my-post-header">
+ <!--      <div class="post-meta">      -->
+      <div class="my-post-meta">
+  <!--       <time itemprop="dateCreated"  -->
+         <time class="my-post-time" itemprop="dateCreated"
+              datetime="2020-02-26T09:20:01+08:00"
+              content="2020-02-26">
+          02-26
+        </time>
+      </div>
+
+  <!--      <h3 class="post-title">     -->
+      <h3 class="my-post-title">
+             <a class="my-post-title-link" href="/post/5f645207.html" itemprop="url">
+   <!--          <a class="post-title-link" href="/post/5f645207.html" itemprop="url">  -->
+            <span itemprop="name">Vue知识总结</span>
+          </a>
+      </h3>
+
+    </header>
+  </article>
     <div class="collection-year">
       <h2 class="collection-header">2019</h2>
     </div>
@@ -414,7 +450,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -425,7 +461,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -447,7 +483,13 @@
 <!-- CloudCalendar -->
 <div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
 	<div class="widget" id="CloudCalendar"></div>
+</div><div class="night-mode motion-element">
+  <a role="button" class="night-btn">
+    <i class="fa fa-lightbulb-o"></i>
+    Night Mode
+  </a>
 </div>
+
       </div>
 
     </div>
@@ -784,6 +826,25 @@ if (document.querySelectorAll('pre.mermaid').length) {
     });
     </script>
 
+<script>
+  ((w, d) => {
+    'use strict';
+      let userScheme = localStorage.getItem('Scheme');
+      if (userScheme) d.documentElement.className += ' darkScheme';
+      const btn = d.querySelector('.night-btn');
+      w.addEventListener('keydown', e => {
+        if (e.altKey && e.code === 'KeyX') btn.click();
+      });
+      btn.addEventListener('click', () => {
+        d.documentElement.classList.toggle('darkScheme');
+        if ( d.documentElement.classList.contains('darkScheme') ) {
+          localStorage.setItem('Scheme', 'Dark');
+          return;
+        }
+        localStorage.removeItem('Scheme');
+      });
+  })(window, document);
+</script>
  <!--
  -->
  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>

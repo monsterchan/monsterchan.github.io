@@ -82,6 +82,14 @@
     isPost: false
   };
 </script>
+<script>
+  ((w, d) => {
+    'use strict';
+      const userScheme = localStorage.getItem('Scheme');
+      if (!userScheme) return;
+    d.documentElement.className += ' darkScheme';
+  })(window, document);
+</script>
 
   <title>留言板 | Shawn
   </title>
@@ -357,7 +365,7 @@ pointer-events: none;
    <div  align="center" style="margin-top:-20px">================&gt; 下面是来到本站所有的小伙伴🍉~ &lt;================</div>
 
   <div  >
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=1204&t=n&d=KwvJVOemQWG8fiXOXee87LU4V_M6PpH14XSARpdOUAQ&co=2d78ad&cmo=ff710a&cmn=ff5353&ct=ffffff'></script>
+  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=1204&t=n&d=KwvJVOemQWG8fiXOXee87LU4V_M6PpH14XSARpdOUAQ&co=2d78ad&cmo=00cc39&cmn=ff5353&ct=ffffff'></script>
   </div>
   <div  align="center" style="margin-top:20px">================&gt; 来了~就留下脚印吧~ &lt;================</div>
 </div>
@@ -443,7 +451,7 @@ pointer-events: none;
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -454,7 +462,7 @@ pointer-events: none;
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -476,7 +484,13 @@ pointer-events: none;
 <!-- CloudCalendar -->
 <div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
 	<div class="widget" id="CloudCalendar"></div>
+</div><div class="night-mode motion-element">
+  <a role="button" class="night-btn">
+    <i class="fa fa-lightbulb-o"></i>
+    Night Mode
+  </a>
 </div>
+
       </div>
 
     </div>
@@ -823,6 +837,25 @@ if (document.querySelectorAll('pre.mermaid').length) {
     });
     </script>
 
+<script>
+  ((w, d) => {
+    'use strict';
+      let userScheme = localStorage.getItem('Scheme');
+      if (userScheme) d.documentElement.className += ' darkScheme';
+      const btn = d.querySelector('.night-btn');
+      w.addEventListener('keydown', e => {
+        if (e.altKey && e.code === 'KeyX') btn.click();
+      });
+      btn.addEventListener('click', () => {
+        d.documentElement.classList.toggle('darkScheme');
+        if ( d.documentElement.classList.contains('darkScheme') ) {
+          localStorage.setItem('Scheme', 'Dark');
+          return;
+        }
+        localStorage.removeItem('Scheme');
+      });
+  })(window, document);
+</script>
  <!--
  -->
  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
@@ -874,6 +907,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
         <script type="text/javascript">
                       var maps = document.getElementById('clustrmaps-widget-v2')
                  //     console.log(maps)
+                       console.log("maps")
                       if(maps != null){
                       maps.setAttribute('target','_blank')
                       }

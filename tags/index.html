@@ -82,6 +82,14 @@
     isPost: false
   };
 </script>
+<script>
+  ((w, d) => {
+    'use strict';
+      const userScheme = localStorage.getItem('Scheme');
+      if (!userScheme) return;
+    d.documentElement.className += ' darkScheme';
+  })(window, document);
+</script>
 
   <title>标签 | Shawn
   </title>
@@ -298,11 +306,11 @@
       <div class="post-body">
         <!--    <div class="tag-cloud">
               <div class="tag-cloud-title">
-              目前共计 2 个标签
+              目前共计 3 个标签
             </div>
 
             <div class="tag-cloud-tags">
-              <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 12px; color: #ccc">旅行</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 12px; color: #ccc">随笔</a>
+              <a href="/tags/Vue-%E5%89%8D%E7%AB%AF/" style="font-size: 12px; color: #ccc">-Vue -前端</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 12px; color: #ccc">旅行</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 12px; color: #ccc">随笔</a>
             </div>
             </div>
             -->
@@ -312,7 +320,7 @@
                   
               </div> -->
               <div class="tag-cloud-tags" id="tags">
-                <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 16px; color: #fff">旅行</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 16px; color: #fff">随笔</a>
+                <a href="/tags/Vue-%E5%89%8D%E7%AB%AF/" style="font-size: 16px; color: #fff">-Vue -前端</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 16px; color: #fff">旅行</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 16px; color: #fff">随笔</a>
               </div>
             </div>
             <br>
@@ -406,7 +414,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -417,7 +425,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -439,7 +447,13 @@
 <!-- CloudCalendar -->
 <div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
 	<div class="widget" id="CloudCalendar"></div>
+</div><div class="night-mode motion-element">
+  <a role="button" class="night-btn">
+    <i class="fa fa-lightbulb-o"></i>
+    Night Mode
+  </a>
 </div>
+
       </div>
 
     </div>
@@ -786,6 +800,25 @@ if (document.querySelectorAll('pre.mermaid').length) {
     });
     </script>
 
+<script>
+  ((w, d) => {
+    'use strict';
+      let userScheme = localStorage.getItem('Scheme');
+      if (userScheme) d.documentElement.className += ' darkScheme';
+      const btn = d.querySelector('.night-btn');
+      w.addEventListener('keydown', e => {
+        if (e.altKey && e.code === 'KeyX') btn.click();
+      });
+      btn.addEventListener('click', () => {
+        d.documentElement.classList.toggle('darkScheme');
+        if ( d.documentElement.classList.contains('darkScheme') ) {
+          localStorage.setItem('Scheme', 'Dark');
+          return;
+        }
+        localStorage.removeItem('Scheme');
+      });
+  })(window, document);
+</script>
  <!--
  -->
  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>

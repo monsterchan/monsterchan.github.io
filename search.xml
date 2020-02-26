@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Vue知识总结</title>
+    <url>/post/5f645207.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h6 id="Q1-Vue中v-refs层级使用-sunny"><a href="#Q1-Vue中v-refs层级使用-sunny" class="headerlink" title="Q1:Vue中v-refs层级使用:sunny:"></a><strong>Q1:</strong><code>Vue中v-refs层级使用</code>:sunny:</h6><p>其中<code>v-ref=&quot;model&quot;</code>，在页面分层使用中，script中取值时需要注意层级。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-1.png" alt="Vue组件层级"><br>页面外Script中调用数据时应注意层级，用<code>$refs.层级名</code><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-2.png" alt="script方法"></p>
+<h5 id="Q2-子组件向父组件传值方法"><a href="#Q2-子组件向父组件传值方法" class="headerlink" title="Q2: 子组件向父组件传值方法"></a><strong>Q2:</strong> 子组件向父组件传值方法</h5><p>在子组件文件script中写好监听事件，方法名为子组件的id选择器的值，注意传入<code>发送标识（check-array）</code>和<code>发送数据(this.checkrows)</code>。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-1.png" alt="子组件监听方法"><br>父组件要注意 <code>@checked-array=“getCheckedArray”</code><br><code>@checked-array</code>是接收子组件发送事件，<code>getCheckedArray</code>触发调用的方法，父组件script中对接收值处理。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png" alt="父组件中孩子组件定义"><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png" alt="methods方法"><br>未完待续<del>~</del></p>
+]]></content>
+      <tags>
+        <tag>-Vue -前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>安康</title>
     <url>/post/4c0b8182.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>第一次去安康，做了3小时的车，挺累的，准备找酒店下榻，（猜我住的哪？嘻嘻，有的小伙伴可能猜中啦!）,这是在天桥上拍的一张环江城墙的照片（ps：监视器的打光等亮度有点高）,晚上散步的好地方。<br /><img data-src="https://i.loli.net/2020/01/10/7aqldPGz9goWfIN.jpg" alt="街景.jpeg"><br />走了十几分钟，到了汉江边，“汉中汉江宽而浅，安康汉江窄而深”<br /><img data-src="https://i.loli.net/2020/01/10/hlVOLzHm1RFe8TD.jpg" alt="汉江边.jpeg"><br />酒店的挂画，描绘的让人感觉舒适。<br /><img data-src="https://i.loli.net/2020/01/10/9GOhJuypKWNXbcd.jpg" alt="壁画.jpeg"><br />安康的面和西安的面各有特色，配的酸菜味道很好，现在想起来还流口水呢!<br /><img data-src="https://i.loli.net/2020/01/10/2a6kAORsexcfLyr.jpg" alt="臊子面.jpeg"><br />离开安康时坐在出租车上拍的，应该是个旅游景点，晚上灯火通明，下次有机会上去看一下。<br /><img data-src="https://i.loli.net/2020/01/10/mP8rbZ4vFo5MqhD.jpg" alt="某塔.jpeg"><br />提醒各位小伙伴哦！在安康坐出租车记得打票哟！</p>
