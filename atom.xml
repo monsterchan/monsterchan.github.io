@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenkequan.cn/"/>
-  <updated>2020-02-26T04:21:37.235Z</updated>
+  <updated>2020-02-26T04:26:00.958Z</updated>
   <id>https://chenkequan.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://chenkequan.cn/post/5f645207.html"/>
     <id>https://chenkequan.cn/post/5f645207.html</id>
     <published>2020-02-26T01:20:01.000Z</published>
-    <updated>2020-02-26T04:21:37.235Z</updated>
+    <updated>2020-02-26T04:26:00.958Z</updated>
     
     <summary type="html">
     
@@ -31,7 +31,9 @@
     
     
     
-      <category term="-Vue -前端" scheme="https://chenkequan.cn/tags/Vue-%E5%89%8D%E7%AB%AF/"/>
+      <category term="Vue" scheme="https://chenkequan.cn/tags/Vue/"/>
+    
+      <category term="前端" scheme="https://chenkequan.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   

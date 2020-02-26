@@ -7,7 +7,8 @@
 <h5 id="Q2-子组件向父组件传值方法"><a href="#Q2-子组件向父组件传值方法" class="headerlink" title="Q2: 子组件向父组件传值方法"></a><strong>Q2:</strong> 子组件向父组件传值方法</h5><p>在子组件文件script中写好监听事件，方法名为子组件的id选择器的值，注意传入<code>发送标识（check-array）</code>和<code>发送数据(this.checkrows)</code>。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-1.png" alt="子组件监听方法"><br>父组件要注意 <code>@checked-array=“getCheckedArray”</code><br><code>@checked-array</code>是接收子组件发送事件，<code>getCheckedArray</code>触发调用的方法，父组件script中对接收值处理。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png" alt="父组件中孩子组件定义"><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png" alt="methods方法"><br>未完待续<del>~</del></p>
 ]]></content>
       <tags>
-        <tag>-Vue -前端</tag>
+        <tag>Vue</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
