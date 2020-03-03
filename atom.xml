@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Shawn</title>
+  <title>瑾怀轩</title>
   <icon>https://chenkequan.cn/icon.png</icon>
-  <subtitle>Just for Best</subtitle>
+  <subtitle>优秀背后是苦行僧般的自律</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenkequan.cn/"/>
-  <updated>2020-02-29T08:09:58.274Z</updated>
+  <updated>2020-02-29T08:24:04.432Z</updated>
   <id>https://chenkequan.cn/</id>
   
   <author>
-    <name>Shawn</name>
+    <name>陈科全</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="https://chenkequan.cn/post/8284c17.html"/>
     <id>https://chenkequan.cn/post/8284c17.html</id>
     <published>2020-02-27T03:32:40.000Z</published>
-    <updated>2020-02-29T08:09:58.274Z</updated>
+    <updated>2020-02-29T08:24:04.432Z</updated>
     
     <summary type="html">
     
