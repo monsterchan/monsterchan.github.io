@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenkequan.cn/"/>
-  <updated>2020-03-07T01:12:12.138Z</updated>
+  <updated>2020-03-16T16:55:10.370Z</updated>
   <id>https://chenkequan.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随笔（2）</title>
+    <link href="https://chenkequan.cn/post/51346d8.html"/>
+    <id>https://chenkequan.cn/post/51346d8.html</id>
+    <published>2020-03-16T16:13:30.000Z</published>
+    <updated>2020-03-16T16:55:10.370Z</updated>
+    
+    <summary type="html">
+    
+      时光您不会说话，那就用文字记录吧！
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://chenkequan.cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="随笔" scheme="https://chenkequan.cn/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构笔记之排序</title>
@@ -46,7 +67,7 @@
     <link href="https://chenkequan.cn/post/2fe3da.html"/>
     <id>https://chenkequan.cn/post/2fe3da.html</id>
     <published>2020-02-26T05:09:29.000Z</published>
-    <updated>2020-03-07T01:16:38.364Z</updated>
+    <updated>2020-03-16T12:27:11.105Z</updated>
     
     <summary type="html">
     
@@ -109,11 +130,11 @@
     <link href="https://chenkequan.cn/post/96f79f5c.html"/>
     <id>https://chenkequan.cn/post/96f79f5c.html</id>
     <published>2016-06-04T16:00:00.000Z</published>
-    <updated>2020-03-07T01:16:38.447Z</updated>
+    <updated>2020-03-16T12:35:20.461Z</updated>
     
     <summary type="html">
     
-      用一年学说话，用一生学闭嘴
+      时光您不会说话，那就用文字记录吧！
     
     </summary>
     
