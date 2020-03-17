@@ -62,7 +62,7 @@
 <meta property="og:image" content="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png">
 <meta property="og:image" content="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png">
 <meta property="article:published_time" content="2020-02-26T01:20:01.000Z">
-<meta property="article:modified_time" content="2020-03-07T01:16:38.306Z">
+<meta property="article:modified_time" content="2020-03-17T01:55:06.757Z">
 <meta property="article:author" content="瑾柒">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
@@ -153,7 +153,7 @@
 <link rel="alternate" href="/atom.xml" title="瑾怀轩" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body  itemscope itemtype="http://schema.org/WebPage">
 <script src="/js/src/social-share.min.js"></script>
   <div class="container use-motion">
     <div class="headband"></div>
@@ -161,7 +161,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-<meta name="baidu-site-verification" content="6VWurVhWUo">
+<meta name="baidu-site-verification" content="6VWurVhWUo" />
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
@@ -245,7 +245,9 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -312,7 +314,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-07 09:16:38" itemprop="dateModified" datetime="2020-03-07T09:16:38+08:00">2020-03-07</time>
+                <time title="修改时间：2020-03-17 09:55:06" itemprop="dateModified" datetime="2020-03-17T09:55:06+08:00">2020-03-17</time>
               </span>
 
 
@@ -361,8 +363,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h6 id="Q1-Vue中v-refs层级使用-x2728"><a href="#Q1-Vue中v-refs层级使用-x2728" class="headerlink" title="Q1:Vue中v-refs层级使用&#x2728;"></a><strong>Q1:</strong><code>Vue中v-refs层级使用</code><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>其中<code>v-ref=&quot;model&quot;</code>，在页面分层使用中，script中取值时需要注意层级。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-1.png" alt="Vue组件层级"><br>页面外Script中调用数据时应注意层级，用<code>$refs.层级名</code><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-2.png" alt="script方法"></p>
-<h6 id="Q2-子组件向父组件传值方法-x2728"><a href="#Q2-子组件向父组件传值方法-x2728" class="headerlink" title="Q2: 子组件向父组件传值方法&#x2728;"></a><strong>Q2:</strong> 子组件向父组件传值方法<span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>在子组件文件script中写好监听事件，方法名为子组件的id选择器的值，注意传入<code>发送标识（check-array）</code>和<code>发送数据(this.checkrows)</code>。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-1.png" alt="子组件监听方法"><br>父组件要注意 <code>@checked-array=“getCheckedArray”</code><br><code>@checked-array</code>是接收子组件发送事件，<code>getCheckedArray</code>触发调用的方法，父组件script中对接收值处理。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png" alt="父组件中孩子组件定义"><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png" alt="methods方法"><br>未完待续<del>~</del><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
+          <h6 id="Q1-Vue中v-refs层级使用-x2728"><a href="#Q1-Vue中v-refs层级使用-x2728" class="headerlink" title="Q1:Vue中v-refs层级使用&#x2728;"></a><strong>Q1:</strong><code>Vue中v-refs层级使用</code><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>　　其中<code>v-ref=&quot;model&quot;</code>，在页面分层使用中，script中取值时需要注意层级。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-1.png" alt="Vue组件层级"><br>　　页面外Script中调用数据时应注意层级，用<code>$refs.层级名</code><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-2.png" alt="script方法"></p>
+<h6 id="Q2-子组件向父组件传值方法-x2728"><a href="#Q2-子组件向父组件传值方法-x2728" class="headerlink" title="Q2: 子组件向父组件传值方法&#x2728;"></a><strong>Q2:</strong> 子组件向父组件传值方法<span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>　　在子组件文件script中写好监听事件，方法名为子组件的id选择器的值，注意传入<code>发送标识（check-array）</code>和<code>发送数据(this.checkrows)</code>。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-1.png" alt="子组件监听方法"><br>　　父组件要注意 <code>@checked-array=“getCheckedArray”</code><br>　　<code>@checked-array</code>是接收子组件发送事件，<code>getCheckedArray</code>触发调用的方法，父组件script中对接收值处理。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png" alt="父组件中孩子组件定义"><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png" alt="methods方法"><br>未完待续<del>~</del><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
 
       
     </div>
@@ -410,7 +412,7 @@
     <a href="https://chenkequan.cn/post/5f645207.html" title="Vue知识总结">https://chenkequan.cn/post/5f645207.html</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/CC%20BY-NC-SA%203.0/4.0/" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/CC%20BY-NC-SA%203.0/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -418,9 +420,9 @@
 
       <footer class="post-footer">
           
-          <div class="post-tags">
-              <a href="/tags/Vue/" rel="tag"><span>🔖</span> Vue</a>
-              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><span>🔖</span> 前端</a>
+          <div class="post-tags"  >
+              <a href="/tags/Vue/" rel="tag" ><span >🔖</span> Vue</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag" ><span >🔖</span> 前端</a>
           </div>
 
         
@@ -445,8 +447,8 @@
   </div>
  <!-- 引入share.js -->
 
-<div style="margin-left: 33%; margin-top: 30px;">
-<div data-weibo-title="分享到微博" data-qq-title="分享到QQ" data-douban-title="分享到豆瓣" class="social-share" data-disabled="twitter,facebook" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣">分享到：</div>
+<div style="margin-left: 33%; margin-top: 30px;" >
+<div data-weibo-title="分享到微博" data-qq-title="分享到QQ" data-douban-title="分享到豆瓣" class="social-share" class="share-component" data-disabled="twitter,facebook" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣">分享到：</div>
 </div>
 
 
@@ -527,7 +529,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="瑾柒" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
+    <img class="site-author-image" itemprop="image" alt="瑾柒"
+      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">瑾柒</p>
   <div class="site-description" itemprop="description">愿你我更优秀！</div>
 </div>
@@ -556,10 +559,10 @@
 -->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
@@ -699,7 +702,22 @@
   }
 </style>
 <div data-pjax class="aplayer">
-<meting-js server="netease" type="playlist" id="2856157420" fixed="true" autoplay="false" theme="#f37055" loop="all" order="random" lrctype:"3" preload="metadata" volume="0.5" mutex="true" list-max-height="340px">
+<meting-js
+	server="netease"
+	type="playlist"
+	id="2856157420"
+	fixed="true"
+	autoplay="false"
+	theme="#f37055"
+	loop="all"
+	order="random"
+	lrcType:"3"
+
+	preload="metadata"
+	volume="0.5"
+	mutex="true"
+	list-max-height="340px"
+	>
 </meting-js>
 </div>
 
@@ -726,7 +744,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
 </div>
 <!--
 -->
@@ -735,7 +753,7 @@
   </div>
 -->
   <div id="days"></div>
-  	
+  	</script>
   	<script language="javascript">
   	function show_date_time(){
   	window.setTimeout("show_date_time()", 1000);
@@ -778,7 +796,7 @@
 <!--
     <span class="post-meta-divider">|</span>
 -->
-   <span class="post-meta-item">
+   <span class="post-meta-item"  >
       <span class="post-meta-item-icon">
        <!--  i class="fa fa-eye"/i-->
        <span>本站总访问</span>
