@@ -220,6 +220,7 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5px;
   max-width: 100%;
 }
 hr {
@@ -1191,7 +1192,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #281bf7;
+  background: #3d8ba2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2979,7 +2980,12 @@ body {
   background-color: #fff !important;
 }
 .main-inner {
-  width: 75%;
+  width: 1080px;
+}
+@media (max-width: 767px) {
+  .main-inner {
+    width: auto;
+  }
 }
 .content {
   border-radius: 10px;
@@ -3415,9 +3421,6 @@ a.my-post-title-link {
   color: #99a9bf;
   width: 80px;
 }
-.container .main-inner {
-  width: 1314px;
-}
 .content {
   margin-top: 0;
 }
@@ -3462,7 +3465,7 @@ tbody tr:nth-of-type(odd) {
 }
 .darkScheme body {
   color: #000;
-  background-image: url("https://i.loli.net/2020/02/27/K6tQyL5RZ8gSHcr.jpg");
+  background-image: url("https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/night2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -3487,4 +3490,18 @@ code {
 }
 .darkScheme .post-title-link {
   color: #ad9c9c;
+}
+#hottop {
+  text-align: left;
+  margin: -31px 50px 40px 50px;
+  background-color: rgba(255,255,255,0);
+  padding: 50px 36px 80px 71px;
+}
+.hot-post-body img {
+  margin-top: -130px;
+}
+@media (max-width: 767px) {
+  .hot-post-body img {
+    margin-top: -86px;
+  }
 }
