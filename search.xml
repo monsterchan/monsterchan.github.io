@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>随笔（2）</title>
+    <url>/post/51346d8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>　　忙忙碌碌，碌碌忙忙，白天照看妹妹学习的同时，准备着复试笔试，晚上去帮爸妈干活，最近家里也是异常的忙。晚上一边干着体力活，一边听着樊登老师讲着书。刺耳的机器声便变得没有那么歇斯底里了。<br>　　下午准备用下知网查论文资料时，回想起当年在母校写论文的场景，在学校的教务系统发现了新天地，免费课程、论文资料数据库接口等众多资源，遗憾的是当年还是年少没有好好利用。带着一丝追忆打开母校的官网，浏览者曾经熟悉的界面，好奇试了下图书馆资源系统，看见一条公告，由于疫情影响外网也可以使用数据库，研究了会，居然我用当初的学号登上了，让我感到意外的是母校居然还保留着我信息。暖意涌上心头。<br>　　对妹妹的教育，自认为还算合理，可是她的倔脾气让我能留下伤心的泪。听着樊老师讲的书，努力在书中寻找答案。检查自己的行为哪些地方需要改，也真是自己教育知识的匮乏。从前几日听的寻找人生意义的五本书（《活出生命的意义》《干法》《活法》《自卑与超越》《坚毅》）到教育方面的书籍（《恰如其分的自尊》《父母的语言》《如何说孩子才会听，如何听孩子才会说》）这几本书真的还是很不错的，有时间还是得亲自翻一翻，并做好总结。还有学习心理学的计划。<br>　　反省自己在联系刷题过程中由着自己先做完再对答案的心理，导致对答案时会记忆不深刻。这样也不符合刻意训练的方法论。在此做出检讨。听书中有一个方法论，稍稍改了一点点，准备抽空拿一张白纸写好今年的100个目标，达到一个划掉一个，这样等年末时进行复盘。<br>　　爸也快收拾完了，夜深了，睡觉，自己的睡觉习惯也是得改一改，不过也不知为什么，晚上思路活跃而清晰。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随笔（3）</title>
+    <url>/post/51346d8.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>几个月的忙碌，</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构笔记之排序</title>
+    <url>/post/8284c17.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="一、概念篇"><a href="#一、概念篇" class="headerlink" title="一、概念篇"></a>一、概念篇</h4><p><strong>1、排序：</strong>重新排列元素使表中元素按照关键字递增或递减的过程。<br><strong>2、稳定性：</strong>待排序列中相同关键字相同的元素，在经过某排序算法排序后，相对位置不发生变化，称<code>排序算法是稳定的</code>。<code>注意：</code>不是衡量算法优劣的标准。区分于<code>时间复杂度</code>和<code>空间复杂度</code>。<br><strong>3、内部排序：</strong>排序期间元素全部放在内存中的排序。<br> 　　内部排序两种操作：<code>比较</code>和<code>移动</code>。基数排序不是基于比较的。</p>
+<p> 未完待续<del>~</del><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>知识点</tag>
+        <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客</title>
+    <url>/post/2fe3da.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>1、搭建体会</strong><br>　　经过十几天的时间，Hexo博客终于改版成功，也非常喜欢Next的语法风格，还遇到适配Next的编写神器<a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener external nofollow noreferrer">HexoEditor</a>，给我写MD文件提供了很大的方便。</p>
+<p> 　　我也不准备出关于Hexo的搭建教程了，网上教程太多了，主要还是要看自己喜欢什么风格，它的语法使用自己能接受，剩下的就是改改样式了，可以改主题的样式，同样可以通过引入custom的样式文件，然后进行覆盖样式就OK。</p>
+<p> 　　当然搭建过程肯定会遇到这样那样问题，一定要沉下心，如果自己选了某个主题，慢慢改，一点点改，切忌不要改着改着换个主题，遇到困难再换一个。那样您也偏离了做博客的初心了。</p>
+<p> 　　如果遇到实在过不去的坎，可以告诉你一个方法，把原来做的保存起来，重新建一套博客，顺着之前的方法重做一次，第二次速度必定比第二次快好多，好多页面样式是之前写过的，这也要给小伙伴敲黑板了，<code>用好git，用好git，用好git</code>。每一个版本做好信息注释。</p>
+<p> 　　关于node_modules的安装包时注意有些需要其他依赖包，把所需要的一次安了，不要安一些用不到的，有时产生冲突时，问题很难找。确定安装的包做好-save，这样有时node包错乱时，半天找不到错误时node_modules删掉，再<code>npm i</code>一下就OK。</p>
+<p><strong>2、本博客的介绍</strong><br>　　现阶段还未放在服务器上，现在还没有其他项目需求，放在服务器有点大材小用了，后面有时间会搭建动态网站时，再入手服务器。</p>
+<p>　　部署到GitHub上的确加载太慢，所以用的双端部署，速度快了不少。图片比较大的放在<a href="https://sm.ms/" target="_blank" rel="noopener external nofollow noreferrer">SM.MS</a>,感觉还不错。文章的图和相册的图放在<a href="https://console.cloud.tencent.com/" target="_blank" rel="noopener external nofollow noreferrer">腾讯云</a>，相册的图主要是需要腾讯云的存储桶实现动态生成相册，不需要去调代码，只需要上传图片，当然后面的图可能一张几兆以上，会P一下放相册不然流量扛不住，家里没矿，然后把原图通过百度云链接分享给大家。时间多一点了，资源分享网也会出来和大家见面，也希望大家<code>打赞赏一下</code>（其实也是给百度云存资源用做交保护费）。</p>
+<p>　　博客的夜晚模式和手机适配还没调，现在时间不能放在这上面研究，要准备复试，选笔试科目时其实也想通过写博客和学习同时加深对数据结构的理解和对算法的理解。把内容同步整理到<a href="https://study.chenkequan.cn/#/" target="_blank" rel="noopener external nofollow noreferrer">学习笔记</a>,有好多知识没有整理，复试这件事过了，还要系统整理一下，生疏的知识也要温习下。博客文章也会持续更新。谢谢大家关注，有问题也可以留言，记得写邮箱，回复会有提醒！</p>
+]]></content>
+      <categories>
+        <category>心得</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue知识总结</title>
+    <url>/post/5f645207.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h6 id="Q1-Vue中v-refs层级使用-x2728"><a href="#Q1-Vue中v-refs层级使用-x2728" class="headerlink" title="Q1:Vue中v-refs层级使用&#x2728;"></a><strong>Q1:</strong><code>Vue中v-refs层级使用</code><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>　　其中<code>v-ref=&quot;model&quot;</code>，在页面分层使用中，script中取值时需要注意层级。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-1.png" alt="Vue组件层级"><br>　　页面外Script中调用数据时应注意层级，用<code>$refs.层级名</code><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q1-2.png" alt="script方法"></p>
+<h6 id="Q2-子组件向父组件传值方法-x2728"><a href="#Q2-子组件向父组件传值方法-x2728" class="headerlink" title="Q2: 子组件向父组件传值方法&#x2728;"></a><strong>Q2:</strong> 子组件向父组件传值方法<span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></h6><p>　　在子组件文件script中写好监听事件，方法名为子组件的id选择器的值，注意传入<code>发送标识（check-array）</code>和<code>发送数据(this.checkrows)</code>。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-1.png" alt="子组件监听方法"><br>　　父组件要注意 <code>@checked-array=“getCheckedArray”</code><br>　　<code>@checked-array</code>是接收子组件发送事件，<code>getCheckedArray</code>触发调用的方法，父组件script中对接收值处理。<br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/Q2-2.png" alt="父组件中孩子组件定义"><br><img data-src="http://postimages-1258744191.cos.ap-guangzhou.myqcloud.com/Vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/q2-3.png" alt="methods方法"><br>未完待续<del>~</del><span class="github-emoji" style="background-image: url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span></p>
+]]></content>
+      <tags>
+        <tag>Vue</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安康</title>
+    <url>/post/4c0b8182.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>　　第一次去安康，做了3小时的车，挺累的，准备找酒店下榻，（猜我住的哪？嘻嘻，有的小伙伴可能猜中啦!）,这是在天桥上拍的一张环江城墙的照片（ps：监视器的打光等亮度有点高）,晚上散步的好地方。<br /><img data-src="https://i.loli.net/2020/01/10/7aqldPGz9goWfIN.jpg" alt="街景.jpeg"><br />　　走了十几分钟，到了汉江边，“汉中汉江宽而浅，安康汉江窄而深”<br /><img data-src="https://i.loli.net/2020/01/10/hlVOLzHm1RFe8TD.jpg" alt="汉江边.jpeg"><br />　　酒店的挂画，描绘的让人感觉舒适。<br /><img data-src="https://i.loli.net/2020/01/10/9GOhJuypKWNXbcd.jpg" alt="壁画.jpeg"><br />　　安康的面和西安的面各有特色，配的酸菜味道很好，现在想起来还流口水呢!<br /><img data-src="https://i.loli.net/2020/01/10/2a6kAORsexcfLyr.jpg" alt="臊子面.jpeg"><br />　　离开安康时坐在出租车上拍的，应该是个旅游景点，晚上灯火通明，下次有机会上去看一下。<br /><img data-src="https://i.loli.net/2020/01/10/mP8rbZ4vFo5MqhD.jpg" alt="某塔.jpeg"><br />　　提醒各位小伙伴哦！在安康坐出租车记得打票哟！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随笔（1）</title>
+    <url>/post/96f79f5c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>　　注：《人本界面》《用户体验的要素》<br>　　当你看到不平等的事，或者不好的事，你可以向好的方向去想，或许这是一次机会。去想一种解决当前现状的处境解决办法。—————李彦宏。<br>　　理念都是前人花时间总结出来的，启发我们在学习的过程中不要盲目、一味的去学习，要隔一段时间强迫自己去总结。——–2016-6-5<br>1、只有“不可复制”“量身定做”才能创造出正真的价值。<br>2、“共性只是基础，个性才是附加值。” 我们学到的都是些共性的东西，但想要把事情做透，仅靠共性的基础是不可能的，必须通过实践认识深入个性附加值。“作文大选、写作技巧”那都是扫盲用的，有造诣的作家必然有非凡的生活体会。<br>3、正真的写作高手，是从骨子里去体验和感受，而不是寻求捷径。好设计比讲究套路，也不可能复制，因为创意不可能量产。<br>4、我们大部分人是误把常识当做知识，然后以为自己有多高的壁垒。知识这个东西，积累得越多才越好玩。<br>5、世事洞明皆学问，人情达练即文章。<br>6、最好product，有人可以带领他们将产品做得更好，没人自己也可以一个人完成它。</p>
+<p>1、只要我们不荒废了我们的青春，未来就向我们敞开了无限可能。<br>2、现实是很残酷的，它残酷到可以触痛你的梦想，可以让你鼻青脸肿，但现实又并不可怕，前提是你先要让自己变得强大。<br>3、皇冠灼灼生辉，是梦想与荣耀的象征。当你的才华撑不起你的梦想时，你就玩命地提升自己的实力。欲戴皇冠，必承其重。<br>4、其实遇到困难时才是自己成长进步的时候，在接受困难时便是成长的时候。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+</search>

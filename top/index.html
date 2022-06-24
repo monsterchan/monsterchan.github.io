@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="referrer" content="no-referrer">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/sun32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/sun32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/sun32.png">
+  <link rel="mask-icon" href="/images/sun32.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|14px:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://chenkequan.cn').hostname,
+    root: '/',
+    scheme: 'Mist',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"hide","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: true,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="世间所有的相遇，都是久别重逢">
+<meta property="og:type" content="website">
+<meta property="og:title" content="热榜">
+<meta property="og:url" content="https://chenkequan.cn/top/index.html">
+<meta property="og:site_name" content="瑾怀轩">
+<meta property="og:description" content="世间所有的相遇，都是久别重逢">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-03T12:36:04.684Z">
+<meta property="article:modified_time" content="2022-04-03T12:36:04.684Z">
+<meta property="article:author" content="陈柒">
+<meta property="article:tag" content="top">
+<meta property="article:tag" content="文章阅读量排行榜">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://chenkequan.cn/top/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: false
+  };
+</script>
+<script>
+  ((w, d) => {
+    'use strict';
+      const userScheme = localStorage.getItem('Scheme');
+      if (!userScheme) return;
+    d.documentElement.className += ' darkScheme';
+  })(window, document);
+</script>
+
+  <title>热榜 | 瑾怀轩
+  </title>
+  
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-156515679-1',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?70dcae86fb96dd626a86f71c0ce25957";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+ <!-- 数字雨 -->
+<!-- <canvas id="canvas" width="1440" height="900" ></canvas>
+  <script type="text/javascript" src="/js/DigitalRain.js"></script>
+-->
+<link rel="stylesheet" href="/css/share.min.css">
+
+<link rel="alternate" href="/atom.xml" title="瑾怀轩" type="application/atom+xml">
+</head>
+
+<body  itemscope itemtype="http://schema.org/WebPage">
+<script src="/js/src/social-share.min.js"></script>
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+<meta name="baidu-site-verification" content="6VWurVhWUo" />
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">瑾怀轩</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">优秀背后是苦行僧般的自律</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-top">
+
+    <a href="/top/" rel="section"><i class="fa fa-fw fa-signal"></i>热榜</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-photots">
+
+    <a href="/photos/" rel="section"><i class="fa fa-fw fa-file-image-o"></i>影集</a>
+
+  </li>
+        <li class="menu-item menu-item-links">
+
+    <a href="/links" rel="section"><i class="fa fa-fw fa-link"></i>友链</a>
+
+  </li>
+        <li class="menu-item menu-item-books">
+
+    <a href="/books" rel="section"><i class="fa fa-fw fa-book"></i>阅读</a>
+
+  </li>
+        <li class="menu-item menu-item-movies">
+
+    <a href="/movies" rel="section"><i class="fa fa-fw fa-film"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-mesboard">
+
+    <a href="/mesboard/" rel="section"><i class="fa fa-fw fa-comment"></i>留言</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">热榜
+</h2>
+
+<div class="post-meta">
+    <div class="post-description">世间所有的相遇，都是久别重逢</div>
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+<div class="hot-post-body img" ><img  src="https://i.loli.net/2020/02/14/V2GBbmCtAj1RU5W.jpg" /></div>
+<div class="my_top_line" id="line"></div>
+<div id="hottop"></div>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script>AV.initialize("abjgEzjHH9MKHgJmfwjKRuxY-gzGzoHsz","QnyxXfkHI82ehTHQOmv275Jx");</script>
+<script  type="text/javascript">
+  var time=0,
+   title="",
+   url="",
+  emoji=["🍇","🍈","🍉","🍋","🍎","🍏","🍐","🥝","🍓","🍄","🥦","🍍","🍅"];
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(30);
+  query.find().then(function (todo) {
+    for (var i=0;i<30;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+       var emoji1 = emoji[Math.floor(Math.random() * emoji.length)];
+      var content="<p>"+"<font color='#1C1C1C'>"+"【"+emoji1+"文章热度:"+time+"℃】"+"</font>"+"<a href='"+"https://chenkequan.cn"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="陈柒"
+      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
+  <p class="site-author-name" itemprop="name">陈柒</p>
+  <div class="site-description" itemprop="description">愿你我更优秀！</div>
+</div>
+<!--
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+-->
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+
+
+<div class="night-mode motion-element">
+  <a role="button" class="night-btn">
+    <i class="fa fa-lightbulb-o"></i>
+    Night Mode
+  </a>
+</div>
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+<!--      <script src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    //暂时储存文章中的内容
+    var div = $('.post-body');
+    //暂时储存目录的内容
+    var toc=$('.post-toc')
+    function password() {
+        if(''){
+            //将文章内容删除
+            div.remove();
+            //将目录删除
+            toc.remove();
+            //将文章删除后，向原来文章的地方添加，应该出现的提示用户输入密码的样式
+            //下面这里的第一个用textarea是因为如果在手机端的时候只能显示一部分文字，
+            //只是拓展:input里面的字只能显示一行，不会自动换行，目前上网搜索没有发现好的办法，所以用了textarea，右下角的小三角通过resize:none 去掉。
+            $('.post-header').after(
+            '<span class="description" value="请输入密码，然后按 Enter 键阅读" style="font-style: oblique;font-weight: bold;border: none;display: block;'+
+            'width: 60%;margin: 0 auto;text-align: center;outline: none;margin-bottom: 40px;resize:none ">'+
+            '<i class="fa fa-heartbeat" id="myheartbeat"></i>'+
+            '请输入密码，然后按 Enter 键阅读' +
+            '<i class="fa fa-heartbeat" id="myheartbeat"></i>'+
+            '</span>' +
+            '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
+            '<input class="password"  type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
+            'margin: 0 auto;outline: none;width:95%"/>' +
+            '</div>')
+            //绑定点击事件，如果是点击的.password 这个div就改变样式，如果是document中除了div之外的其他任何元素，就变回原来的样式。
+            document.onclick = function (event) {
+                var e = event || window.event;
+                var elem = e.srcElement || e.target;
+
+                while (elem) {
+                    if (elem != document) {
+                        if (elem.className == "password") {
+                            //$(".password").animate({paddingTop:"30px",width:"100%",borderWidth:"2px"},300)
+                            return;
+                        }
+                        elem = elem.parentNode;
+                    } else {
+                        //$(".password").animate({paddingTop:"0px",width:"95%",borderWidth:"1px"},300)
+                        return;
+                    }
+                }
+            }
+            //绑定enter键按下后离开的事件
+            $(document).keyup(function(event){
+                if(event.keyCode ==13&&$('.password').length>0){
+                    //console.log($('.password').val())
+                    //console.log('')
+                    if ($('.password').val() == '') {
+                        //恢复文章内容
+                        (div).appendTo($(".post-header"))
+                        //恢复目录
+                        toc.appendTo($(".sidebar-inner"))
+                        //删除本页面的输入密码组件
+                        $(".description").remove();
+                        $(".qiang").remove();
+                        $(".password").remove();
+
+                        //重新处理pjax事件,如果没有加pjax的从下面这行起到下面的else之间的代码需要去掉。
+                        //图片懒加载，没有加入此功能的这个函数需要去掉
+                      //  $('img').lazyload({
+                      //      placeholder: '/images/loading.gif',
+                      //      effect: 'fadeIn',
+                      /      threshold : 100,
+                      //      failure_limit : 20,
+                      //      skip_invisible : false
+                     //   });
+                        //pjax后出现文章不显示，没有pjax的下面四行需要去掉
+                      //  $(".post-block").css({opacity:1});
+                     //   $(".post-header").css({opacity:1});
+                     //   $(".post-body").css({opacity:1});
+                      //  $(".pagination").css({opacity:1});
+                    }else {
+                        alert("对不起，密码输入错误。")
+                    }
+                }
+                //将document的keyup移除，防止在pjax的情况下会重复绑定事件
+            });
+        }
+    }
+    password();
+</script>
+          -->
+       <!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  <!播放器缩入页面>
+  <!.aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }>
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<div data-pjax class="aplayer">
+<meting-js
+	server="netease"
+	type="playlist"
+	id="2856157420"
+	fixed="true"
+	autoplay="false"
+	theme="#f37055"
+	loop="all"
+	order="random"
+	lrcType:"3"
+
+	preload="metadata"
+	volume="0.5"
+	mutex="true"
+	list-max-height="340px"
+	>
+</meting-js>
+</div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">陈柒</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">3k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5 分钟</span>
+</div>
+<!--
+-->
+<!--
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Mist</a>
+  </div>
+-->
+  <div id="days"></div>
+  	</script>
+  	<script language="javascript">
+  	function show_date_time(){
+  	window.setTimeout("show_date_time()", 1000);
+  	BirthDay=new Date("6/20/2019 20:00:00");
+  	today=new Date();
+  	timeold=(today.getTime()-BirthDay.getTime());
+  	sectimeold=timeold/1000
+  	secondsold=Math.floor(sectimeold);
+  	msPerDay=24*60*60*1000
+  	e_daysold=timeold/msPerDay
+  	daysold=Math.floor(e_daysold);
+  	e_hrsold=(e_daysold-daysold)*24;
+  	hrsold=setzero(Math.floor(e_hrsold));
+  	e_minsold=(e_hrsold-hrsold)*60;
+  	minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+  	seconds=setzero(Math.floor((e_minsold-minsold)*60));
+  	document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
+  	}
+  	function setzero(i){
+  	if (i<10)
+  	{i="0" + i};
+  	return i;
+  	}
+  	show_date_time();
+  	</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item ">
+      <span class="post-meta-item-icon ">
+       <!-- i class="fa fa-user"/i -->
+       <span>本站总访客</span>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+        <span>人</span>
+      </span>
+  </span>
+<!--
+    <span class="post-meta-divider">|</span>
+-->
+   <span class="post-meta-item"  >
+      <span class="post-meta-item-icon">
+       <!--  i class="fa fa-eye"/i-->
+       <span>本站总访问</span>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+       <span>次</span>
+ </span>
+</div>
+
+<!--<!
+
+
+ -->
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+<!-- 
+  -->
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+<!-- 爆炸烟花 -->
+<!--
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/firework.js"></script>
+-->
+
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!--
+<script type="text/javascript" src="/js/src/clicksocialvalue.js"></script>
+-->
+<!-- linkcard -->
+<script type="text/javascript" src="/js/src/linkcard.js"></script>
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'https://chenkequan.cn/top/',]
+      });
+      });
+  </script>
+<script>
+  ((w, d) => {
+    'use strict';
+      let userScheme = localStorage.getItem('Scheme');
+      if (userScheme) d.documentElement.className += ' darkScheme';
+      const btn = d.querySelector('.night-btn');
+      w.addEventListener('keydown', e => {
+        if (e.altKey && e.code === 'KeyX') btn.click();
+      });
+      btn.addEventListener('click', () => {
+        d.documentElement.classList.toggle('darkScheme');
+        if ( d.documentElement.classList.contains('darkScheme') ) {
+          localStorage.setItem('Scheme', 'Dark');
+          return;
+        }
+        localStorage.removeItem('Scheme');
+      });
+  })(window, document);
+</script>
+<!-- calendar widget -->
+
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+ <!--
+ -->
+ <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+   <script src="https://postpic-1258744191.cos.ap-chengdu.myqcloud.com/sitefile/Valine.min.js"></script>
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+ <!--     av: AV,    -->
+      el: '#valine-comments',
+      admin_email: '707718837@qq.com',
+      emoticon_url: 'https://picture-1258744191.cos.ap-chengdu.myqcloud.com/emjio',
+                 emoticon_list: ["弹肚皮.gif","慌张.gif","夹住.gif","小花花.gif","抖脚脚.gif","动耳朵.gif","动次打次.gif","吃东西.gif",
+                                  "眼睛转.gif","跳着走.gif","跳舞.gif","哭唧唧.gif","开车.gif","风吹秀发.gif","抖眼.gif","眨眼.gif",
+                                  "摇头.gif","抖眼镜.gif","浪起来.gif","浪起来-1.gif","都是小心心.gif","比心心.gif","我走了.gif","吹风.gif","打篮球.gif",
+                                 "暗地观察.png","便便.png","不出所料.png","不高兴.png","不说话.png","抽烟.png","瞅你.png","呲牙.png",
+                                "得意.png","愤怒.png","尴尬.png","高兴.png","鼓掌.png","观察.png","害羞.png","汗.png","黑线.png",
+                                "欢呼.png","击掌.png","惊喜.png","看不见.png","看热闹.png","抠鼻.png","口水.png","哭泣.png","狂汗.png",
+                                "蜡烛.png","脸红.png","内伤.png","喷水.png","喷血.png","期待.png","亲亲.png","扇耳光.png","深思.png",
+                                "锁眉.png","投降.png","吐.png","吐舌.png","吐血倒地.png","无奈.png","无所谓.png","无语.png","喜极而泣.png",
+                                "献花.png","献黄瓜.png","想一想.png","小眼睛.png","邪恶.png","阴暗.png","赞一个.png","长草.png","咽气.png",
+                                "肿包.png","皱眉.png","装大款.png","坐等.png",
+                                "中刀.png","中枪.png","中指.png"],
+      appId: 'abjgEzjHH9MKHgJmfwjKRuxY-gzGzoHsz',
+      appKey: 'QnyxXfkHI82ehTHQOmv275Jx',
+      placeholder: "请留下您的脚印哟!",
+      lang: 'zh-cn',
+<!--      verify: false,
+      notify: false,
+      avatar: '',
+ -->
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":180,"height":365,"hOffset":119,"vOffset":0},"mobile":{"show":false,"scale":0.5},"react":{"opacity":0.9,"opacityOnHover":1},"dialog":{"enable":false,"hitokoto":true},"log":false});</script></body>
+</html>
