@@ -36,7 +36,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -157,7 +157,7 @@
 <link rel="alternate" href="/atom.xml" title="瑾怀轩" type="application/atom+xml">
 </head>
 
-<body  itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
 <script src="/js/src/social-share.min.js"></script>
   <div class="container use-motion">
     <div class="headband"></div>
@@ -165,7 +165,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-<meta name="baidu-site-verification" content="6VWurVhWUo" />
+<meta name="baidu-site-verification" content="6VWurVhWUo">
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
@@ -249,9 +249,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -304,9 +302,7 @@
  <!--      <div class="post-meta">      -->
       <div class="my-post-meta">
   <!--       <time itemprop="dateCreated"  -->
-         <time class="my-post-time" itemprop="dateCreated"
-              datetime="2020-02-26T09:20:01+08:00"
-              content="2020-02-26">
+         <time class="my-post-time" itemprop="dateCreated" datetime="2020-02-26T09:20:01+08:00" content="2020-02-26">
           02-26
         </time>
       </div>
@@ -385,8 +381,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="陈柒"
-      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
+    <img class="site-author-image" itemprop="image" alt="陈柒" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">陈柒</p>
   <div class="site-description" itemprop="description">愿你我更优秀！</div>
 </div>
@@ -415,10 +410,10 @@
 -->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
@@ -558,23 +553,9 @@
   }
 </style>
 <div data-pjax id="aplayer"></div>
-<meting-js
-	server="netease"
-	type="playlist"
-	id="60198"
-	fixed="true"
-	autoplay="false"
-	theme="#f37055"
-	loop="all"
-	order="random"
-	lrcType:"3"
-	preload="metadata"
-	volume="0.5"
-	mutex="true"
-	list-max-height="340px"
-	>
+<meting-js server="netease" type="playlist" id="60198" fixed="true" autoplay="false" theme="#f37055" loop="all" order="random" lrctype:"3" preload="metadata" volume="0.5" mutex="true" list-max-height="340px">
 </meting-js>
-</div>
+
 
     </main>
 
@@ -608,7 +589,7 @@
   </div>
 -->
   <div id="days"></div>
-  	</script>
+  	
   	<script language="javascript">
   	function show_date_time(){
   	window.setTimeout("show_date_time()", 1000);
@@ -651,7 +632,7 @@
 <!--
     <span class="post-meta-divider">|</span>
 -->
-   <span class="post-meta-item"  >
+   <span class="post-meta-item">
       <span class="post-meta-item-icon">
        <!--  i class="fa fa-eye"/i-->
        <span>本站总访问</span>

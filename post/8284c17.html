@@ -36,7 +36,7 @@
     mediumzoom: false,
     lazyload: true,
     pangu: true,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},
     algolia: {
       appID: '',
       apiKey: '',
@@ -150,7 +150,7 @@
 <link rel="alternate" href="/atom.xml" title="瑾怀轩" type="application/atom+xml">
 </head>
 
-<body  itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
 <script src="/js/src/social-share.min.js"></script>
   <div class="container use-motion">
     <div class="headband"></div>
@@ -158,7 +158,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta">
-<meta name="baidu-site-verification" content="6VWurVhWUo" />
+<meta name="baidu-site-verification" content="6VWurVhWUo">
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
@@ -242,9 +242,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
     <i class="fa fa-times-circle"></i>
@@ -409,7 +407,7 @@
     <a href="https://chenkequan.cn/post/8284c17.html" title="数据结构笔记之排序">https://chenkequan.cn/post/8284c17.html</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/CC%20BY-NC-SA%203.0/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/CC%20BY-NC-SA%203.0/4.0/" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -417,17 +415,17 @@
 
       <footer class="post-footer">
           
-          <div class="post-tags"  >
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag" ><span >🔖</span> 数据结构</a>
-              <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag" ><span >🔖</span> 知识点</a>
-              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag" ><span >🔖</span> 计算机</a>
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><span>🔖</span> 数据结构</a>
+              <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag"><span>🔖</span> 知识点</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag"><span>🔖</span> 计算机</a>
           </div>
 
         
  <!-- 引入share.js -->
 
-<div style="margin-left: 33%; margin-top: 30px;" >
-<div data-weibo-title="分享到微博" data-qq-title="分享到QQ" data-douban-title="分享到豆瓣" class="social-share" class="share-component" data-disabled="twitter,facebook" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣">分享到：</div>
+<div style="margin-left: 33%; margin-top: 30px;">
+<div data-weibo-title="分享到微博" data-qq-title="分享到QQ" data-douban-title="分享到豆瓣" class="social-share" data-disabled="twitter,facebook" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣">分享到：</div>
 </div>
 
 
@@ -508,8 +506,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="陈柒"
-      src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
+    <img class="site-author-image" itemprop="image" alt="陈柒" src="https://picture-1258744191.cos.ap-chengdu.myqcloud.com/blogimages/touxiang150.jpg">
   <p class="site-author-name" itemprop="name">陈柒</p>
   <div class="site-description" itemprop="description">愿你我更优秀！</div>
 </div>
@@ -538,10 +535,10 @@
 -->
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/monsterchan" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;monsterchan" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:chankequan@gmail.com" title="E-Mail → mailto:chankequan@gmail.com" rel="external nofollow noopener noreferrer" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
@@ -681,23 +678,9 @@
   }
 </style>
 <div data-pjax id="aplayer"></div>
-<meting-js
-	server="netease"
-	type="playlist"
-	id="60198"
-	fixed="true"
-	autoplay="false"
-	theme="#f37055"
-	loop="all"
-	order="random"
-	lrcType:"3"
-	preload="metadata"
-	volume="0.5"
-	mutex="true"
-	list-max-height="340px"
-	>
+<meting-js server="netease" type="playlist" id="60198" fixed="true" autoplay="false" theme="#f37055" loop="all" order="random" lrctype:"3" preload="metadata" volume="0.5" mutex="true" list-max-height="340px">
 </meting-js>
-</div>
+
 
     </main>
 
@@ -731,7 +714,7 @@
   </div>
 -->
   <div id="days"></div>
-  	</script>
+  	
   	<script language="javascript">
   	function show_date_time(){
   	window.setTimeout("show_date_time()", 1000);
@@ -774,7 +757,7 @@
 <!--
     <span class="post-meta-divider">|</span>
 -->
-   <span class="post-meta-item"  >
+   <span class="post-meta-item">
       <span class="post-meta-item-icon">
        <!--  i class="fa fa-eye"/i-->
        <span>本站总访问</span>
