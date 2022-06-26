@@ -13,18 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>随笔（3）</title>
-    <url>/post/51346d8.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>几个月的忙碌，</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构笔记之排序</title>
     <url>/post/8284c17.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h4 id="一、概念篇"><a href="#一、概念篇" class="headerlink" title="一、概念篇"></a>一、概念篇</h4><p><strong>1、排序：</strong>重新排列元素使表中元素按照关键字递增或递减的过程。<br><strong>2、稳定性：</strong>待排序列中相同关键字相同的元素，在经过某排序算法排序后，相对位置不发生变化，称<code>排序算法是稳定的</code>。<code>注意：</code>不是衡量算法优劣的标准。区分于<code>时间复杂度</code>和<code>空间复杂度</code>。<br><strong>3、内部排序：</strong>排序期间元素全部放在内存中的排序。<br> 　　内部排序两种操作：<code>比较</code>和<code>移动</code>。基数排序不是基于比较的。</p>
